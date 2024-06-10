@@ -7,7 +7,7 @@ export default function page() {
           <h1 className="text-red-500 text-5xl font-bold my-10">
             Cost of living
           </h1>
-          <p>
+          <p className="mb-10">
             The cost of living in the Czech Republic is much lower than in the
             old EU member states and you will be able to live comfortably
             without spending large sums.

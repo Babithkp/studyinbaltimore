@@ -17,11 +17,11 @@ export default function page() {
             The nearest airports are in Brno, Prague, Vienna or Bratislava. For
             the cheapest flights check: kiwi.com.
           </p>
-          <p>
+          <p className="mb-10">
             The nearest airports are in Brno, Prague, Vienna or Bratislava. For
             the cheapest flights check: kiwi.com.
           </p>
-          <p>
+          <p className="mb-10">
             International Airport Brno-Tuřany is regularly served by flights
             from London-Stansted. There are many seasonal flights to and from
             the Greek islands, Egypt, Spain, Turkey and Bulgaria. To get to
@@ -31,7 +31,7 @@ export default function page() {
             running every hour). The journey takes around 20 minutes. For more
             information go to: Brno-airport
           </p>
-          <p>
+          <p className="mb-10">
             Other possible connections are via Vaclav Havel Airport in Prague,
             Wien-Schwechat Airport in Vienna or Bratislava Airport. Buses
             heading downtown to train and bus stations are available at the

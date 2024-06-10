@@ -10,7 +10,7 @@ export default function page() {
           </h1>
           <ul>
             <li className="flex items-center">
-              <GoDotFill className="text-red-500" /> JAMU is a public higher
+              <GoDotFill className="text-red-500" size={"1rem"}/> JAMU is a public higher
               education institution (HEI) founded 12th September 1947. Its
               beginnings had been preceded by efforts connected to the name of
               Leoš Janáček, one of the most distinquished figures in modern
@@ -20,7 +20,7 @@ export default function page() {
               performing arts.
             </li>
             <li className="flex items-center">
-              <GoDotFill className="text-red-500" /> The JAMU´s main role is to
+              <GoDotFill className="text-red-500" size={"1rem"}/> The JAMU´s main role is to
               provide tertiary education in the field of arts (music, theatre,
               dance, and multimedia) in its accredited bachelor, master and
               doctoral study programmes. At the same time it actively pursues

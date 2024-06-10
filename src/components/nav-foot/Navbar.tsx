@@ -63,27 +63,50 @@ export default function Navbar() {
         </li>
         {brnoDropdownState && (
           <ul
-            className="absolute top-[3rem] left-[5rem] bg-white text-sm drop-shadow-lg font-semibold"
+            className="absolute top-[3rem] left-[5rem] bg-white text-sm drop-shadow-lg font-semibold flex flex-col"
             ref={menuRef}
           >
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/brno/basic-information"}>Basic Information</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/brno/why-study-in-brno"}>Why study in Brno</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/brno/life-in-brno"}>Life in Brno</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/brno/cost-of-living"}>Cost of living</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/brno/accommodation"}>Accommodation</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/brno/transportation"}>Transportation</Link>
-            </li>
+            <Link
+              href={"/brno/basic-information"}
+              className="border-b-[1px]  hover:bg-slate-100 hover:text-red-500 p-2 px-4"
+            >
+              Basic Information
+            </Link>
+
+            <Link
+              href={"/brno/why-study-in-brno"}
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+            >
+              Why study in Brno
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/brno/life-in-brno"}
+            >
+              Life in Brno
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/brno/cost-of-living"}
+            >
+              Cost of living
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/brno/accommodation"}
+            >
+              Accommodation
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/brno/transportation"}
+            >
+              Transportation
+            </Link>
           </ul>
         )}
         <li
@@ -102,21 +125,36 @@ export default function Navbar() {
         </li>
         {universitiesDropdownState && (
           <ul
-            className="absolute top-[3rem] left-[12rem] bg-white text-sm drop-shadow-lg font-semibold"
+            className="absolute top-[3rem] left-[12rem] bg-white text-sm drop-shadow-lg font-semibold flex flex-col"
             ref={menuRef}
           >
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/universities/brno-university-of-technology"}>Brno University of Technology</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/universities/mendel-university-in-brano"}>Mendel University in Brno</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/universities/masaryk-university"}>Masaryk University</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/universities/janáček-academy-of-performing-arts"}>Janáček Academy of Performing Arts</Link>
-            </li>
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/universities/brno-university-of-technology"}
+            >
+              Brno University of Technology
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/universities/mendel-university-in-brano"}
+            >
+              Mendel University in Brno
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/universities/masaryk-university"}
+            >
+              Masaryk University
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/universities/academy-of-performing-arts"}
+            >
+              Janáček Academy of Performing Arts
+            </Link>
           </ul>
         )}
         <li
@@ -133,30 +171,63 @@ export default function Navbar() {
         </li>
         {studyDropdownState && (
           <ul
-            className="absolute top-[3rem] left-[22rem] bg-white text-sm drop-shadow-lg font-semibold"
+            className="absolute top-[3rem] left-[22rem] bg-white text-sm drop-shadow-lg font-semibold flex flex-col"
             ref={menuRef}
           >
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>Student status ansd work</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>International experience during studies</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>How to apply</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>Visa</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>Scholarship</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>Health and insurance</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>Recognition of foreign education</Link>
-            </li>
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/study/student-status"}
+            >
+              Student status and work
+            </Link>
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/study/students-with-special-needs"}
+            >
+              Students with special needs
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/study/international-experience-during-studies"}
+            >
+              International experience during studies
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/study/how-to-apply"}
+            >
+              How to apply
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/study/visa"}
+            >
+              Visa
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/study/scholarships"}
+            >
+              Scholarship
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/study/health"}
+            >
+              Health and insurance
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/study/recognition-of-previous-foreign-education"}
+            >
+              Recognition of foreign education
+            </Link>
           </ul>
         )}
         <li
@@ -173,21 +244,36 @@ export default function Navbar() {
         </li>
         {programmersDropdownState && (
           <ul
-            className="absolute top-[3rem] left-[28.5rem] bg-white text-sm drop-shadow-lg font-semibold"
+            className="absolute top-[3rem] left-[28.5rem] bg-white text-sm drop-shadow-lg font-semibold flex flex-col"
             ref={menuRef}
           >
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>All Programmers (145)</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>bachelor&apos;s programmers (17)</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>Master&apos;s programmers (52)</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>Doctoral programmers (76)</Link>
-            </li>
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/"}
+            >
+              All Programmers (145)
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/"}
+            >
+              bachelor&apos;s programmers (17)
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/"}
+            >
+              Master&apos;s programmers (52)
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/"}
+            >
+              Doctoral programmers (76)
+            </Link>
           </ul>
         )}
         <li
@@ -204,24 +290,43 @@ export default function Navbar() {
         </li>
         {CzechilaDropdownState && (
           <ul
-            className="absolute top-[3rem] left-[39.5rem] bg-white text-sm drop-shadow-lg font-semibold"
+            className="absolute top-[3rem] left-[39.5rem] bg-white text-sm drop-shadow-lg font-semibold flex flex-col"
             ref={menuRef}
           >
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>Basic information</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>culture and traditions</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>Czech mark in the world</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>Nature, climate and weather</Link>
-            </li>
-            <li className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500">
-              <Link href={"/"}>Language</Link>
-            </li>
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/"}
+            >
+              Basic information
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/"}
+            >
+              culture and traditions
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/"}
+            >
+              Czech mark in the world
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/"}
+            >
+              Nature, climate and weather
+            </Link>
+
+            <Link
+              className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
+              href={"/"}
+            >
+              Language
+            </Link>
           </ul>
         )}
         <li>

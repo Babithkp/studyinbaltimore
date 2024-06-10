@@ -7,7 +7,7 @@ export default function page() {
           <h1 className="text-red-500 text-5xl font-bold my-10">
             Set to know Brno
           </h1>
-          <p>
+          <p className="mb-10">
             First things first – Brno is the second largest city of the Czech
             Republic, big enough to have all of the things you might need or
             want and small enough so that you will soon get to the first-name

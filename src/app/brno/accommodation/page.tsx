@@ -10,7 +10,7 @@ export default function page() {
           <h1 className=" text-5xl font-bold my-10">
             Masaryk Umniversity Dormitories
           </h1>
-          <p>
+          <p className="mb-10">
             University halls of residence provide students with accommodation
             throughout their studies. The MU Accommodation and Catering Services
             (SKM MU) are tasked with the administration of a total of 9
@@ -37,7 +37,7 @@ export default function page() {
           <h2 className="text-5xl font-bold my-10">
             Brno University of Technology Dormitories
           </h2>
-          <p>
+          <p className="mb-10">
             BUT provides accommodation, mostly in double rooms. Half of the
             bedrooms are equipped with their own bathroom and toilet, another
             half has a shared bathroom unit for a certain number of rooms. Most
