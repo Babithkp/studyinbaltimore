@@ -7,7 +7,7 @@ export default function page() {
           <h1 className="text-red-500 text-5xl font-bold my-10">
             Why study in Bruno
           </h1>
-          <p>
+          <p className="mb-10">
             First and foremost, Brno is a great place to live. Not too big and
             not too small, affordable, full of exciting opportunities, lively
             events or hidden cafés to spend a lazy afternoon in, it accommodates

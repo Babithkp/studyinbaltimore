@@ -38,7 +38,7 @@ export default function page() {
             airport terminals.
           </p>
           <h2 className=" text-4xl font-bold my-10">By train</h2>
-          <p>
+          <p className="mb-10">
             Brno is an important rail junction situated on the Balkans –
             Budapest – Prague – Berlin – Scandinavia rail route. All Euro city
             trains stop in Brno. The distance from Prague to Brno is 256

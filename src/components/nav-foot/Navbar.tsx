@@ -249,28 +249,28 @@ export default function Navbar() {
           >
             <Link
               className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
-              href={"/"}
+              href={"/programmers/study-programmes"}
             >
               All Programmers (145)
             </Link>
 
             <Link
               className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
-              href={"/"}
+              href={"/programmers/bachelors-study-programmes"}
             >
               bachelor&apos;s programmers (17)
             </Link>
 
             <Link
               className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
-              href={"/"}
+              href={"/programmers/masters-study-programmes"}
             >
               Master&apos;s programmers (52)
             </Link>
 
             <Link
               className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
-              href={"/"}
+              href={"/programmers/doctoral-study-programmes"}
             >
               Doctoral programmers (76)
             </Link>
@@ -295,35 +295,35 @@ export default function Navbar() {
           >
             <Link
               className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
-              href={"/"}
+              href={"/Czechia/facts-and-figures"}
             >
               Basic information
             </Link>
 
             <Link
               className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
-              href={"/"}
+              href={"/Czechia/culture-and-traditions"}
             >
               culture and traditions
             </Link>
 
             <Link
               className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
-              href={"/"}
+              href={"/Czechia/czech-mark-in-the-world"}
             >
               Czech mark in the world
             </Link>
 
             <Link
               className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
-              href={"/"}
+              href={"/Czechia/nature"}
             >
               Nature, climate and weather
             </Link>
 
             <Link
               className="border-b-[1px] p-2 px-4 hover:bg-slate-100 hover:text-red-500"
-              href={"/"}
+              href={"/Czechia/Language"}
             >
               Language
             </Link>

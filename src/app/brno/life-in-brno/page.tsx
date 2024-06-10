@@ -5,7 +5,7 @@ import React from "react";export default function page() {
         <article className="flex flex-col ">
           <h1 className=" text-5xl font-bold my-10">Life in Brno</h1>
           <h1 className=" text-5xl font-bold my-10">Food</h1>
-          <p>
+          <p className="mb-10">
             Brno&apos;s gastronomic and coffee scene has grown from modest to
             great do downright extravagant. Instead of convincing you here,
             we’ll let others do the talking: here’s what The Guardian thinks
