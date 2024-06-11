@@ -1,10 +1,10 @@
 import React from "react";export default function page() {
   return (
     <main className="bg-slate-100 flex justify-center items-center">
-      <section className="w-[60%] p-10">
-        <article className="flex flex-col ">
-          <h1 className=" text-5xl font-bold my-10">Life in Brno</h1>
-          <h1 className=" text-5xl font-bold my-10">Food</h1>
+      <section className="w-[60%] p-10 max-md:w-full max-md:p-4">
+        <article>
+          <h1 className="text-red-500 text-5xl font-bold my-10 max-md:text-3xl">Life in Brno</h1>
+          <h1 className=" text-5xl font-bold my-10 max-md:text-3xl">Food</h1>
           <p className="mb-10">
             Brno&apos;s gastronomic and coffee scene has grown from modest to
             great do downright extravagant. Instead of convincing you here,

@@ -1,9 +1,9 @@
 import { IoMdArrowDropdown } from "react-icons/io";export default function page() {
   return (
     <main className="bg-slate-100 flex justify-center items-center">
-      <section className="w-[80%] p-10">
-        <article className="flex flex-col ">
-          <h1 className="text-red-500 text-5xl font-bold my-10">Ambassadors</h1>
+      <section className="w-[60%] p-10 max-md:w-full max-md:p-4">
+        <article>
+          <h1 className="text-red-500 text-5xl font-bold my-10 max-md:text-3xl">Ambassadors</h1>
           <p className="text-md my-5">
             We have a lot of students who will happily answer your questions and
             help you with deciding what would you like to study here. Find out
@@ -11,7 +11,7 @@ import { IoMdArrowDropdown } from "react-icons/io";export default function page(
             faculty!
           </p>
         </article>
-        <div className="flex gap-3">
+        <div className="flex gap-3 max-md:flex-col">
           <button className="flex justify-between border-2 w-full h-fit p-2 rounded-md bg-white items-center">
             <p>Level of Courses</p> <IoMdArrowDropdown />{" "}
           </button>

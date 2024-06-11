@@ -9,7 +9,7 @@ import {
 export default function page() {
   return (
     <main className="flex justify-center items-center min-h-screen">
-      <section className="w-[50%] pt-10">
+      <section className="w-[50%] pt-10 max-md:w-[90%]">
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger>

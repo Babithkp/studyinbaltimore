@@ -6,9 +6,9 @@
     return (
         <main className=" flex justify-center items-center flex-col ">
         <section className=" p-10 bg-slate-100 flex justify-center items-center">
-            <div className="w-[80%]">
-            <article className="flex flex-col ">
-                <h1 className="text-red-500 text-5xl font-bold my-10">
+        <div className="w-[80%] max-md:w-full">
+          <article className="flex flex-col ">
+            <h1 className="text-red-500 text-5xl font-bold my-10 max-md:text-2xl">
                 Bachelor&apos;s study programmes 
                 </h1>
                 <p className="text-md my-5">
@@ -17,7 +17,7 @@
                 of study. Find out what has the Heart of Europe prepared for you!
                 </p>
             </article>
-            <div className="flex gap-3">
+            <div className="flex gap-3 max-md:flex-col">
                 <input
                 type="text"
                 placeholder="search by keyword..."

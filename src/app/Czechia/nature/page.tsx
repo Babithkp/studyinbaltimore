@@ -1,9 +1,9 @@
 import React from "react";export default function page() {
   return (
     <main className="bg-slate-100 flex justify-center items-center">
-      <section className="w-[60%] p-10">
-        <article className="flex flex-col ">
-          <h1 className="text-red-500 text-5xl font-bold my-10">Nature</h1>
+      <section className="w-[60%] p-10 max-md:w-full max-md:p-4">
+        <article>
+          <h1 className="text-red-500 text-5xl font-bold my-10 max-md:text-3xl">Nature</h1>
           <p className="mb-10">
             Natural attractions in the Czech Republic have been drawing crowds
             for centuries – and its easy to see why. The Czech Republic allows
