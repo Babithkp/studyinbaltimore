@@ -75,7 +75,7 @@ export default function Navbar() {
       <figure className="h-14">
         <Link href={"/"}>
           <svg
-          className="w-[90%] max-md:m-0"
+            className="w-[90%] max-md:m-0"
             width="306"
             height="91"
             viewBox="0 0 306 91"
@@ -115,7 +115,7 @@ export default function Navbar() {
           <Link href={"/aboutus"}>About Us</Link>
         </li>
         <li>
-          <Link href={"/partner-universities"}>Partner  Universities</Link>
+          <Link href={"/partner-universities"}>Partner Universities</Link>
         </li>
         <li>
           <Link href={"/student-life"}>Student Life</Link>
@@ -429,7 +429,25 @@ export default function Navbar() {
             >
               <p>Home</p>
             </Link>
-            <li
+            <Link
+              href={"/aboutus"}
+              className="block w-full border-b-[1px]  p-5 text-base font-medium text-black"
+            >
+              About Us
+            </Link>
+            <Link
+              href={"/partner-universities"}
+              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
+            >
+              Partner Universities
+            </Link>
+            <Link
+              href={"/student-life"}
+              className="block w-full border-b-[1px]  p-5 text-base font-medium text-black"
+            >
+              Student Life
+            </Link>
+            {/* <li
               onClick={() => {
                 closeAllMobileDropdowns();
                 setBrnoDropdownMobileState(!brnoDropdownMobileState);
@@ -721,7 +739,7 @@ export default function Navbar() {
                   Language
                 </Link>
               </ul>
-            )}
+            )} */}
             <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
               <Link href={"/faq"}>FAQ</Link>
             </li>
