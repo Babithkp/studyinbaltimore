@@ -10,7 +10,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-around bg-red-600 py-10 text-white max-lg:gap-5 max-lg:p-10 max-lg:text-xs max-md:mb-[20rem] max-md:flex-col">
+    <footer className="flex justify-around bg-red-600 py-10 text-white max-lg:gap-5 max-lg:p-10 max-lg:text-xs  max-md:flex-col">
       <figure className="max-lg:hidden">IMG</figure>
       <div className="flex flex-col gap-10 max-lg:gap-5">
         <span className="text-3xl font-semibold max-lg:text-2xl">

@@ -75,7 +75,7 @@ export default function Navbar() {
       <figure className="h-14">
         <Link href={"/"}>
           <svg
-            className="w-[90%] max-md:m-0"
+            className="w-[90%] max-md:m-0 h-[100%]"
             width="306"
             height="91"
             viewBox="0 0 306 91"
@@ -120,7 +120,13 @@ export default function Navbar() {
         <li>
           <Link href={"/student-life"}>Student Life</Link>
         </li>
-        <li
+        <li>
+          <Link href={"/jobs"}>Jobs</Link>
+        </li>
+        <li>
+          <Link href={"/visa"}>Visa</Link>
+        </li>
+        {/* <li
           onClick={() => setBrnoDropdownState(!brnoDropdownState)}
           className="cursor-pointer"
         >
@@ -399,7 +405,7 @@ export default function Navbar() {
               Language
             </Link>
           </ul>
-        )}
+        )} */}
         <li>
           <Link href={"/faq"}>FAQ</Link>
         </li>
@@ -446,6 +452,18 @@ export default function Navbar() {
               className="block w-full border-b-[1px]  p-5 text-base font-medium text-black"
             >
               Student Life
+            </Link>
+            <Link
+              href={"/jobs"}
+              className="block w-full border-b-[1px]  p-5 text-base font-medium text-black"
+            >
+              Jobs
+            </Link>
+            <Link
+              href={"/visa"}
+              className="block w-full border-b-[1px]  p-5 text-base font-medium text-black"
+            >
+              Visa
             </Link>
             {/* <li
               onClick={() => {
