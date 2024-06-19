@@ -35,7 +35,7 @@ export default function Home() {
             Study in Baltimore - home to diverse and a vibrant student community
             in Baltimore MD, United States.
           </h1>
-          <p className="bg-blue-600 p-8 text-lg font-medium max-md:p-4">
+          <p className="bg-blue-600 p-8 text-lg font-medium max-md:p-4 max-sm:text-base">
             We make it possible for international students to get scholarships
             to study in the city of baltimore, which provides them access world
             class education and career opportunities.
@@ -44,9 +44,6 @@ export default function Home() {
         <div className="flex gap-5 max-sm:flex-col">
           <button className="rounded-md bg-white px-9 py-3 font-semibold text-red-500">
             DISCOVER baltimore
-          </button>
-          <button className="rounded-md bg-gradient-to-b from-blue-500 to-yellow-500 px-9 py-3 font-bold text-white">
-            INFO FOR UKRAINIANS
           </button>
           <button className="px-5 py-3 text-white underline">
             DISCOVER CZECHIA
