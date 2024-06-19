@@ -12,25 +12,32 @@ import partnerClg1 from "../../public/logo-vut-big.png";
 import partnerClg2 from "../../public/logo-muni-big-new.png";
 import partnerClg3 from "../../public/logo-mendelu-big.png";
 import cardBg from "../../public/homepage-love-brno.webp";
+import img1 from "../../public/universitiesLogo/bccc.png";
+import img2 from "../../public/universitiesLogo/maryland.jpg";
+import img3 from "../../public/universitiesLogo/universityOfBaltimorejpg.jpg";
+import img4 from "../../public/universitiesLogo/coppin.svg";
+import img5 from "../../public/universitiesLogo/morgan.png";
+import img6 from "../../public/universitiesLogo/frostburg.png";
+import { MdArrowOutward } from "react-icons/md";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-slate-100">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-white">
       <Image
         src={image}
         alt="hero image"
-        className="relative h-screen w-full"
+        className="relative h-[130vh] w-full"
       />
-      <section className="absolute -bottom-2 flex w-[50%] flex-col items-center justify-center max-md:w-[90%]">
+      <section className="absolute top-[25%] flex w-[50%] flex-col items-center justify-center max-md:w-[90%]">
         <article className="my-10 text-white">
           <h1 className="bg-red-500 px-14 py-10 text-5xl font-semibold max-md:p-4 max-md:text-4xl">
-            Study in baltimore - a student city in the heart of Europe
+            Study in Baltimore - home to diverse and a vibrant student community
+            in Baltimore MD, United States.
           </h1>
           <p className="bg-blue-400 p-8 text-lg font-medium max-md:p-4">
-            baltimore was voted 6th most popular student city in the world
-            thanks to its world-class education, affordable cost of living,
-            position in the centre of Europe (Czech Republic) and overall
-            safety.
+            We make it possible for international students to get scholarships
+            to study in the city of baltimore, which provides them access world
+            class education and career opportunities.
           </p>
         </article>
         <div className="flex gap-5 max-sm:flex-col">
@@ -45,41 +52,43 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="flex w-[95%] flex-col items-center">
+      <section className="flex w-[95%] flex-col items-center ">
         <div className="flex w-[90%] flex-col items-center justify-center gap-3">
           <h2 className="my-8 text-5xl font-bold text-red-500 max-md:text-3xl">
-            Choose your study programme in baltimore!
+            Study at one of our partner institutions
           </h2>
           <p className="px-5 text-center text-lg font-extralight">
-            Browse over 80 programmes taught in English and make the first step
-            towards your studies at some of the finest universities in Central
-            Europe. Filter the programmes according to your needs and find out
-            which one suits you the best!
+            Each year we provide the opportunity for over 8000 international
+            student to study a postgraduate or doctoral program in the city of
+            Baltimore on fully funded scholarships at one of our
+            partner universities.
           </p>
-          <div className="flex w-full gap-3 font-light max-md:flex-col">
-            <input
-              type="text"
-              placeholder="search by keyword..."
-              className="rounded-md border-[1px] p-2"
-            />
-            <button className="flex w-full items-center justify-between rounded-md border-[1px] border-slate-200 bg-white px-4 py-3">
-              <p>Level of Courses</p> <IoMdArrowDropdown />{" "}
-            </button>
-            <button className="flex w-full items-center justify-between rounded-md border-[1px] border-slate-200 bg-white px-4 py-3">
-              <p>Subject</p> <IoMdArrowDropdown />{" "}
-            </button>
-            <button className="flex w-full items-center justify-between rounded-md border-[1px] border-slate-200 bg-white px-4 py-3">
-              <p>University</p> <IoMdArrowDropdown />{" "}
-            </button>
-            <button className="flex w-full items-center justify-between gap-1 rounded-md border-[1px] border-slate-200 bg-white px-4 py-3">
-              <input type="checkbox" />{" "}
-              <p className="w-[15rem]">Only currently open programs </p>{" "}
-              <FaInfoCircle color="red" />{" "}
-            </button>
+          <div className="flex w-full gap-5 my-10 max-lg:flex-wrap max-sm:grid max-sm:grid-cols-2 text-center">
+            <figure className="max-sm:w-full flex flex-col justify-center items-center">
+              <Image src={img3} alt="college" className="w-40 h-40 max-md:w-26 max-md:h-26 object-contain" />
+              <p className="mr-10 text-center">The University of Baltimore</p>
+            </figure>
+            <figure className="max-sm:w-full  flex flex-col justify-center items-center"> 
+              <Image src={img1} alt="college" className="w-80 h-40 max-md:w-26 max-md:h-26 object-contain"/>
+              <p className=" mr-10 text-center">Baltimore City Community College</p>
+            </figure>
+            <figure className="max-sm:w-full flex flex-col justify-center items-center">
+              <Image src={img2} alt="college" className="w-40 h-40 max-md:w-26 max-md:h-26 object-contain" />
+              <p className="mr-10 text-center">University of Maryland, Baltimore County</p>
+            </figure>
+            <figure className="max-sm:w-full flex flex-col justify-center items-center">
+              <Image src={img4} alt="college" className="w-40 h-40 max-md:w-26 max-md:h-26 object-contain" />
+              <p className="mr-10 text-center">Coppin State University</p>
+            </figure>
+            <figure className="max-sm:w-full flex flex-col justify-center items-center">
+              <Image src={img5} alt="college" className="w-40 h-40 max-md:w-26 max-md:h-26 object-contain" />
+              <p className="mr-10 text-center">Morgan State University</p>
+            </figure>
+            <figure className="max-sm:w-full flex flex-col justify-center items-center">
+              <Image src={img6} alt="college" className="w-40 h-40 max-md:w-26 max-md:h-26 object-cover" />
+              <p className="mr-10 text-center">Frostburg State University</p>
+            </figure>
           </div>
-          <button className="mt-2 flex h-fit w-fit items-center justify-center gap-3 rounded-md bg-red-600 p-5 py-2 text-lg uppercase text-white">
-            <p>Find programmers</p>
-          </button>
         </div>
         <div className="my-20 flex w-full flex-wrap items-center justify-center gap-3">
           <CardClg />
@@ -90,7 +99,7 @@ export default function Home() {
           SHOW ALL STUDY PROGRAMMES (197)
         </Link>
       </section>
-      <section className="mt-5 flex justify-center bg-white">
+      <section className="mt-5 flex justify-center">
         <div className="grid w-[85%] gap-5 max-md:w-[95%] md:grid-cols-3 md:grid-rows-2">
           <div className="col-start-1 row-span-2 flex items-center">
             <p className="my-8 text-5xl font-bold text-red-500 max-md:text-2xl">
@@ -188,7 +197,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex w-full flex-col items-center justify-center gap-10 bg-white">
+      <section className="flex w-full flex-col items-center justify-center gap-10 ">
         <h3 className="my-8 px-5 text-5xl font-bold text-red-500 max-md:text-3xl">
           Find out more about the universities
         </h3>
@@ -244,9 +253,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex w-full flex-col items-center justify-center gap-10 bg-white py-10">
+      <section className="flex w-full flex-col items-center justify-center gap-10  py-10">
         <div className="flex flex-wrap gap-5 max-md:w-[95%]">
-          <div className="relative flex h-[28rem] w-[19rem] items-center justify-center max-md:h-[20rem] max-md:w-[100%]">
+          <div className="relative flex h-[28rem] w-[19rem] items-center justify-center max-md:h-[20rem] max-md:w-[100%] ">
             <Image
               src={cardBg}
               alt="college background"

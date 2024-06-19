@@ -11,7 +11,7 @@ import clgImg6 from "../../../public/deadline.svg";
 import clgImg7 from "../../../public/money.svg";
 export default function CardClg() {
   return (
-    <div className="max-w-[23rem] border-[1px] drop-shadow-lg p-5 flex flex-col gap-5 max-lg:max-w-[50rem] bg-white">
+    <div className="max-w-[22rem] border-[1px] drop-shadow-lg p-5 flex flex-col gap-5 max-lg:max-w-[50rem] bg-white">
           <div className="">
             <h2 className="font-bold text-xl mb-5">
               International Relations and European Politics
