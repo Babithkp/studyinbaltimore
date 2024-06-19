@@ -124,7 +124,7 @@ export default function Home() {
         </div>
         <div className="my-20 flex w-full flex-col flex-wrap items-center justify-center gap-3">
           <div className="flex flex-col items-center" >
-            <span className="text-lg font-medium uppercase text-green-600">
+            <span className="text-lg font-medium uppercase text-red-600">
               what we do
             </span>
             <h3 className="my-8 w-[80%] text-center text-5xl font-bold text-red-500 max-md:text-3xl">
@@ -136,8 +136,8 @@ export default function Home() {
             </p>
           </div>
           <div className="flex gap-5 flex-wrap justify-center items-center">
-          <CardApply image={counsellingIcon} title="Counselling" content="We will suggest the right universities and courses, making a personal plan to help you build your career." />
-          <CardApply image={coachingIcon} title="Coaching" content="We are with you even before the admission process begins. Prepare for entrance exams with our help to score better." />
+          <CardApply image={coachingIcon} title="Scholarship Assistance" content="We are with you even before the admission process begins. Prepare for entrance exams with our help to score better." />
+          <CardApply image={counsellingIcon} title="Admission Guidance" content="We will suggest the right universities and courses, making a personal plan to help you build your career." />
           <CardApply image={visaIcon} title="Visa Counselling" content="With our personalized visa counselling services, you can forget the stress of filling forms and participating in interviews." />
           <CardApply image={financialIcon} title="Financial Counselling" content="Don’t worry about finances. We’ll demystify the process of creating your budget and get you all the needed assistance." />
           </div>
