@@ -18,7 +18,11 @@ import img3 from "../../public/universitiesLogo/universityOfBaltimorejpg.jpg";
 import img4 from "../../public/universitiesLogo/coppin.svg";
 import img5 from "../../public/universitiesLogo/morgan.png";
 import img6 from "../../public/universitiesLogo/frostburg.png";
-import { MdArrowOutward } from "react-icons/md";
+import counsellingIcon from "../../public/icon-counselling.png";
+import coachingIcon from "../../public/coaching-vector.png";
+import visaIcon from "../../public/icon-visa.png";
+import financialIcon from "../../public/icon-financial.png";
+import CardApply from "@/components/cards/CardApply";
 
 export default function Home() {
   return (
@@ -52,7 +56,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="flex w-[95%] flex-col items-center ">
+      <section className="flex w-[95%] flex-col items-center">
         <div className="flex w-[90%] flex-col items-center justify-center gap-3">
           <h2 className="my-8 text-5xl font-bold text-red-500 max-md:text-3xl">
             Study at one of our partner institutions
@@ -63,37 +67,80 @@ export default function Home() {
             Baltimore on fully funded scholarships at one of our
             partner universities.
           </p>
-          <div className="flex w-full gap-5 my-10 max-lg:flex-wrap max-sm:grid max-sm:grid-cols-2 text-center">
-            <figure className="max-sm:w-full flex flex-col justify-center items-center">
-              <Image src={img3} alt="college" className="w-40 h-40 max-md:w-26 max-md:h-26 object-contain" />
+          <div className="my-10 flex w-full gap-5 text-center max-lg:flex-wrap max-sm:grid max-sm:grid-cols-2">
+            <figure className="flex flex-col items-center justify-center max-sm:w-full">
+              <Image
+                src={img3}
+                alt="college"
+                className="max-md:w-26 max-md:h-26 h-40 w-40 object-contain"
+              />
               <p className="mr-10 text-center">The University of Baltimore</p>
             </figure>
-            <figure className="max-sm:w-full  flex flex-col justify-center items-center"> 
-              <Image src={img1} alt="college" className="w-80 h-40 max-md:w-26 max-md:h-26 object-contain"/>
-              <p className=" mr-10 text-center">Baltimore City Community College</p>
+            <figure className="flex flex-col items-center justify-center max-sm:w-full">
+              <Image
+                src={img1}
+                alt="college"
+                className="max-md:w-26 max-md:h-26 h-40 w-80 object-contain"
+              />
+              <p className="mr-10 text-center">
+                Baltimore City Community College
+              </p>
             </figure>
-            <figure className="max-sm:w-full flex flex-col justify-center items-center">
-              <Image src={img2} alt="college" className="w-40 h-40 max-md:w-26 max-md:h-26 object-contain" />
-              <p className="mr-10 text-center">University of Maryland, Baltimore County</p>
+            <figure className="flex flex-col items-center justify-center max-sm:w-full">
+              <Image
+                src={img2}
+                alt="college"
+                className="max-md:w-26 max-md:h-26 h-40 w-40 object-contain"
+              />
+              <p className="mr-10 text-center">
+                University of Maryland, Baltimore County
+              </p>
             </figure>
-            <figure className="max-sm:w-full flex flex-col justify-center items-center">
-              <Image src={img4} alt="college" className="w-40 h-40 max-md:w-26 max-md:h-26 object-contain" />
+            <figure className="flex flex-col items-center justify-center max-sm:w-full">
+              <Image
+                src={img4}
+                alt="college"
+                className="max-md:w-26 max-md:h-26 h-40 w-40 object-contain"
+              />
               <p className="mr-10 text-center">Coppin State University</p>
             </figure>
-            <figure className="max-sm:w-full flex flex-col justify-center items-center">
-              <Image src={img5} alt="college" className="w-40 h-40 max-md:w-26 max-md:h-26 object-contain" />
+            <figure className="flex flex-col items-center justify-center max-sm:w-full">
+              <Image
+                src={img5}
+                alt="college"
+                className="max-md:w-26 max-md:h-26 h-40 w-40 object-contain"
+              />
               <p className="mr-10 text-center">Morgan State University</p>
             </figure>
-            <figure className="max-sm:w-full flex flex-col justify-center items-center">
-              <Image src={img6} alt="college" className="w-40 h-40 max-md:w-26 max-md:h-26 object-cover" />
+            <figure className="flex flex-col items-center justify-center max-sm:w-full">
+              <Image
+                src={img6}
+                alt="college"
+                className="max-md:w-26 max-md:h-26 h-40 w-40 object-cover"
+              />
               <p className="mr-10 text-center">Frostburg State University</p>
             </figure>
           </div>
         </div>
-        <div className="my-20 flex w-full flex-wrap items-center justify-center gap-3">
-          <CardClg />
-          <CardClg />
-          <CardClg />
+        <div className="my-20 flex w-full flex-col flex-wrap items-center justify-center gap-3">
+          <div className="flex flex-col items-center" >
+            <span className="text-lg font-medium uppercase text-green-600">
+              what we do
+            </span>
+            <h3 className="my-8 w-[80%] text-center text-5xl font-bold text-red-500 max-md:text-3xl">
+              Don&apos;t just fill forms without knowing where to apply
+            </h3>
+            <p className="text-center">
+              At Education Street, our mission is to match you with the perfect
+              college for the best fit.
+            </p>
+          </div>
+          <div className="flex gap-5 flex-wrap justify-center items-center">
+          <CardApply image={counsellingIcon} title="Counselling" content="We will suggest the right universities and courses, making a personal plan to help you build your career." />
+          <CardApply image={coachingIcon} title="Coaching" content="We are with you even before the admission process begins. Prepare for entrance exams with our help to score better." />
+          <CardApply image={visaIcon} title="Visa Counselling" content="With our personalized visa counselling services, you can forget the stress of filling forms and participating in interviews." />
+          <CardApply image={financialIcon} title="Financial Counselling" content="Don’t worry about finances. We’ll demystify the process of creating your budget and get you all the needed assistance." />
+          </div>
         </div>
         <Link href="/" className="mb-10 text-lg font-medium underline">
           SHOW ALL STUDY PROGRAMMES (197)
@@ -197,7 +244,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex w-full flex-col items-center justify-center gap-10 ">
+      <section className="flex w-full flex-col items-center justify-center gap-10">
         <h3 className="my-8 px-5 text-5xl font-bold text-red-500 max-md:text-3xl">
           Find out more about the universities
         </h3>
@@ -253,9 +300,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex w-full flex-col items-center justify-center gap-10  py-10">
+      <section className="flex w-full flex-col items-center justify-center gap-10 py-10">
         <div className="flex flex-wrap gap-5 max-md:w-[95%]">
-          <div className="relative flex h-[28rem] w-[19rem] items-center justify-center max-md:h-[20rem] max-md:w-[100%] ">
+          <div className="relative flex h-[28rem] w-[19rem] items-center justify-center max-md:h-[20rem] max-md:w-[100%]">
             <Image
               src={cardBg}
               alt="college background"
