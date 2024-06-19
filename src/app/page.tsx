@@ -1,8 +1,5 @@
 import Image from "next/image";
-import image from "../../public/heroPageImage.jpg";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { FaInfoCircle } from "react-icons/fa";
-import CardClg from "@/components/cards/CardClg";
+import image from "../../public/heroPageImage.png";
 import Link from "next/link";
 import icon1 from "../../public/city.svg";
 import icon2 from "../../public/rocket-graph.svg";
