@@ -11,9 +11,9 @@ import clgImg6 from "../../../public/deadline.svg";
 import clgImg7 from "../../../public/money.svg";
 export default function CardClg() {
   return (
-    <div className="max-w-[20rem] border-[1px] drop-shadow-lg p-5 flex flex-col gap-5 max-lg:max-w-[50rem]">
+    <div className="max-w-[23rem] border-[1px] drop-shadow-lg p-5 flex flex-col gap-5 max-lg:max-w-[50rem] bg-white">
           <div className="">
-            <h2 className="font-bold ">
+            <h2 className="font-bold text-xl mb-5">
               International Relations and European Politics
             </h2>
             <p className="text-slate-500 font-light text-sm">
@@ -30,7 +30,7 @@ export default function CardClg() {
                 className=" bg-blue-500"
               />
             </div>
-            <p className="w-[50%] font-bold">Faculty of Social Studies</p>
+            <p className="w-[50%] font-medium">Faculty of Science</p>
           </figure>
           <ul className="flex flex-col gap-5 border-y-[1px] py-5">
             <li className="flex justify-between gap-2">
