@@ -133,7 +133,7 @@ export default function Home() {
           <CardApply image={coachingIcon} title="Scholarship Assistance" content="We are with you even before the admission process begins. Prepare for entrance exams with our help to score better." />
           <CardApply image={counsellingIcon} title="Admission Guidance" content="We will suggest the right universities and courses, making a personal plan to help you build your career." />
           <CardApply image={visaIcon} title="Visa Counselling" content="With our personalized visa counselling services, you can forget the stress of filling forms and participating in interviews." />
-          <CardApply image={financialIcon} title="Financial Counselling" content="Don’t worry about finances. We’ll demystify the process of creating your budget and get you all the needed assistance." />
+          <CardApply image={financialIcon} title="Free Counseling" content="Don’t worry about finances. We’ll demystify the process of creating your budget and get you all the needed assistance." />
           </div>
         </div>
         <Link href="/" className="mb-10 text-lg font-medium underline">
@@ -144,7 +144,7 @@ export default function Home() {
         <div className="grid w-[85%] gap-5 max-md:w-[95%] md:grid-cols-3 md:grid-rows-2">
           <div className="col-start-1 row-span-2 flex items-center">
             <p className="my-8 text-5xl font-bold text-red-500 max-md:text-2xl">
-              What will you love about baltimore?
+              Why choose us for your study abroad dreams?
             </p>
           </div>
           <div className="grid grid-cols-[2rem,1fr] items-center gap-3">
@@ -154,7 +154,7 @@ export default function Home() {
               className="col-span-1 justify-self-center"
             />
             <h3 className="my-5 text-3xl font-bold text-red-500 max-md:text-2xl">
-              City of students
+              World-class Education
             </h3>
             <p className="col-start-2">
               62,000 students come here every semester, so the city is always
@@ -198,7 +198,7 @@ export default function Home() {
               className="col-span-1 justify-self-center"
             />
             <h3 className="my-5 text-3xl font-bold text-red-500 max-md:text-2xl">
-              Culture from a different world
+            Access to free education! Seamless Application Procedure
             </h3>
             <p className="col-start-2">
               In baltimore, you can explore beautiful historical monuments,
@@ -221,7 +221,7 @@ export default function Home() {
               className="col-span-1 justify-self-center"
             />
             <h3 className="my-5 text-3xl font-bold text-red-500 max-md:text-2xl">
-              Find the ever-important contacts
+                Career & Professional networking Opportunities.
             </h3>
             <p className="col-start-2">
               The universities are a backbone of the city and are connected to
@@ -242,56 +242,24 @@ export default function Home() {
         <h3 className="my-8 px-5 text-5xl font-bold text-red-500 max-md:text-3xl">
           Find out more about the universities
         </h3>
-        <div className="my-10 grid w-[85%] max-md:w-[95%] md:grid-cols-3">
-          <div className="flex flex-col items-center">
-            <Image
-              src={partnerClg1}
-              alt="partner collage 1"
-              className="h-[2.5rem] w-[7rem] object-cover"
-            />
-            <Link
-              href={"/"}
-              className="my-5 text-lg font-semibold text-red-500 underline underline-offset-2 max-md:text-base"
-            >
-              baltimore University of Technology
-            </Link>
-            <p className="line-clamp-2 p-3 py-5 text-center font-light">
-              One of the best technical universities in Central Europe and the
-              biggest one in the Czech Republic
-            </p>
+        <div className="my-10 grid w-[75%] md:grid-cols-4 gap-7">
+          <div className="flex flex-col items-center relative">
+            <h6 className="text-yellow-300 text-8xl font-semibold">11</h6>
+            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%]">YEARS OF BUSINESS</p>
           </div>
-          <div className="flex flex-col items-center">
-            <Image
-              src={partnerClg2}
-              alt="partner collage 1"
-              className="h-[2.5rem] w-[10rem] object-cover"
-            />
-            <Link
-              href={"/"}
-              className="my-5 text-lg font-semibold text-blue-500 underline underline-offset-2 max-md:text-base"
-            >
-              Masaryk University
-            </Link>
-            <p className="line-clamp-2 p-3 py-5 text-center font-light">
-              Multidisciplinary university with 22 % of international students
-            </p>
+          <div className="flex flex-col items-center relative">
+            <h6 className="text-yellow-300 text-8xl font-semibold">7000+</h6>
+            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%]">Student Assisted</p>
           </div>
-          <div className="flex flex-col items-center">
-            <Image
-              src={partnerClg3}
-              alt="partner collage 1"
-              className="h-[2.5rem] w-[9rem] object-cover"
-            />
-            <Link
-              href={"/"}
-              className="my-5 text-lg font-semibold text-green-500 underline underline-offset-2 max-md:text-base"
-            >
-              Mendel University in baltimore
-            </Link>
-            <p className="line-clamp-2 p-3 py-5 text-center font-light">
-              Oldest university of its focus in the country
-            </p>
+          <div className="flex flex-col items-center relative">
+            <h6 className="text-yellow-300 text-8xl font-semibold">99%</h6>
+            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%]">Visa Success Ratio</p>
           </div>
+          <div className="flex flex-col items-center relative">
+            <h6 className="text-yellow-300 text-8xl font-semibold">3+</h6>
+            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%]">Acceptance in Min 3 colleges</p>
+          </div>
+          
         </div>
       </section>
       <section className="flex w-full flex-col items-center justify-center gap-10 py-10">
