@@ -26,7 +26,7 @@ export default function Navbar() {
       <figure className="h-14">
         <Link href={"/"}>
           <svg
-            className="h-[100%] w-[90%] max-md:m-0"
+            className="h-[100%] w-[100%] max-md:m-0"
             width="306"
             height="91"
             viewBox="0 0 306 91"
@@ -75,9 +75,6 @@ export default function Navbar() {
           <Link href={"/visa"}>Visa</Link>
         </li>
         <li>
-          <Link href={"/jobs"}>Jobs</Link>
-        </li>
-        <li>
           <Link href={"/faq"}>FAQ</Link>
         </li>
         <li>
@@ -97,7 +94,6 @@ export default function Navbar() {
             className="flex items-center justify-center gap-2 text-red-500 md:hidden"
             onClick={() => setMenustate(!menuState)}
           >
-            <span className="text-sm font-normal">menu</span>
             <GiHamburgerMenu size={"1.7rem"} />
           </div>
         </AlertDialogTrigger>
@@ -138,12 +134,6 @@ export default function Navbar() {
               className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
             >
               Visa
-            </Link>
-            <Link
-              href={"/jobs"}
-              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
-            >
-              Jobs
             </Link>
             <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
               <Link href={"/faq"}>FAQ</Link>

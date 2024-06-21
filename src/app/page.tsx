@@ -242,22 +242,22 @@ export default function Home() {
         <h3 className="my-8 px-5 text-5xl font-bold text-red-500 max-md:text-3xl">
           Find out more about the universities
         </h3>
-        <div className="my-10 flex w-[80%] justify-between flex-wrap max-md:justify-center gap-7">
+        <div className="my-10 flex w-[80%] justify-between flex-wrap max-md:justify-center gap-10">
           <div className="flex flex-col items-center relative text-center ">
-            <h6 className="text-yellow-300 text-8xl font-semibold">14</h6>
-            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%] w-[210%]">YEARS OF EXPERIENCE</p>
+            <h6 className="text-yellow-300 text-7xl font-semibold">14</h6>
+            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%] w-[300%]">YEARS OF EXPERIENCE</p>
           </div>
           <div className="flex flex-col items-center relative">
-            <h6 className="text-yellow-300 text-8xl font-semibold">18000+</h6>
+            <h6 className="text-yellow-300 text-7xl font-semibold">18000+</h6>
             <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%]">Scholarships Awarded</p>
           </div>
           <div className="flex flex-col items-center relative">
-            <h6 className="text-yellow-300 text-8xl font-semibold">99%</h6>
-            <p className="absolute top-[30%] font-bold text-slate-600 text-lg  max-md:top-[35%] w-[130%]">University Acceptance Rate</p>
+            <h6 className="text-yellow-300 text-7xl font-semibold">99%</h6>
+            <p className="absolute top-[30%] font-bold text-slate-600 text-lg  max-md:top-[35%] w-[180%]">University Acceptance Rate</p>
           </div>
           <div className="flex flex-col items-center relative">
-            <h6 className="text-yellow-300 text-8xl font-semibold">99%</h6>
-            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%] ">Visa Success Rate</p>
+            <h6 className="text-yellow-300 text-7xl font-semibold">99%</h6>
+            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%] w-[120%]">Visa Success Rate</p>
           </div>
           
         </div>
