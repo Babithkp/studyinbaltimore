@@ -242,22 +242,22 @@ export default function Home() {
         <h3 className="my-8 px-5 text-5xl font-bold text-red-500 max-md:text-3xl">
           Find out more about the universities
         </h3>
-        <div className="my-10 grid w-[75%] md:grid-cols-4 gap-7">
-          <div className="flex flex-col items-center relative">
-            <h6 className="text-yellow-300 text-8xl font-semibold">11</h6>
-            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%]">YEARS OF BUSINESS</p>
+        <div className="my-10 flex w-[80%] justify-between flex-wrap max-md:justify-center gap-7">
+          <div className="flex flex-col items-center relative text-center ">
+            <h6 className="text-yellow-300 text-8xl font-semibold">14</h6>
+            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%] w-[210%]">YEARS OF EXPERIENCE</p>
           </div>
           <div className="flex flex-col items-center relative">
-            <h6 className="text-yellow-300 text-8xl font-semibold">7000+</h6>
-            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%]">Student Assisted</p>
+            <h6 className="text-yellow-300 text-8xl font-semibold">18000+</h6>
+            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%]">Scholarships Awarded</p>
           </div>
           <div className="flex flex-col items-center relative">
             <h6 className="text-yellow-300 text-8xl font-semibold">99%</h6>
-            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%]">Visa Success Ratio</p>
+            <p className="absolute top-[30%] font-bold text-slate-600 text-lg  max-md:top-[35%] w-[130%]">University Acceptance Rate</p>
           </div>
           <div className="flex flex-col items-center relative">
-            <h6 className="text-yellow-300 text-8xl font-semibold">3+</h6>
-            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%]">Acceptance in Min 3 colleges</p>
+            <h6 className="text-yellow-300 text-8xl font-semibold">99%</h6>
+            <p className="absolute top-[30%] font-bold text-slate-600 text-lg max-md:top-[35%] ">Visa Success Rate</p>
           </div>
           
         </div>

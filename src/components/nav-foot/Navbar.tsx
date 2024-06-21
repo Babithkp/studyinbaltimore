@@ -26,7 +26,7 @@ export default function Navbar() {
       <figure className="h-14">
         <Link href={"/"}>
           <svg
-            className="w-[90%] max-md:m-0 h-[100%]"
+            className="h-[100%] w-[90%] max-md:m-0"
             width="306"
             height="91"
             viewBox="0 0 306 91"
@@ -60,28 +60,31 @@ export default function Navbar() {
       </figure>
       <ul className="relative flex flex-wrap gap-10 max-lg:w-[80%] max-lg:gap-5 max-md:hidden">
         <li>
-          <Link href={"/"}>Home</Link>
-        </li>
-        <li>
           <Link href={"/aboutus"}>About Us</Link>
         </li>
         <li>
           <Link href={"/partner-universities"}>Partner Universities</Link>
         </li>
         <li>
-          <Link href={"/student-life"}>Student Life</Link>
+          <Link href={"/Scholarships"}>Scholarships</Link>
         </li>
         <li>
-          <Link href={"/jobs"}>Jobs</Link>
+          <Link href={"/student-life"}>Student Life</Link>
         </li>
         <li>
           <Link href={"/visa"}>Visa</Link>
         </li>
         <li>
+          <Link href={"/jobs"}>Jobs</Link>
+        </li>
+        <li>
           <Link href={"/faq"}>FAQ</Link>
         </li>
         <li>
-          <Link href={"/ambassadors"}>Ambassadors</Link>
+          <Link href={"/ambassadors"}>Register As a Student</Link>
+        </li>
+        <li>
+          <Link href={"/contact"}>Become An Agent</Link>
         </li>
         <li>
           <Link href={"/contact"}>Contact</Link>
@@ -108,7 +111,7 @@ export default function Navbar() {
             </Link>
             <Link
               href={"/aboutus"}
-              className="block w-full border-b-[1px]  p-5 text-base font-medium text-black"
+              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
             >
               About Us
             </Link>
@@ -119,28 +122,37 @@ export default function Navbar() {
               Partner Universities
             </Link>
             <Link
+              href={"/Scholarships"}
+              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
+            >
+              Scholarships
+            </Link>
+            <Link
               href={"/student-life"}
-              className="block w-full border-b-[1px]  p-5 text-base font-medium text-black"
+              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
             >
               Student Life
             </Link>
             <Link
-              href={"/jobs"}
-              className="block w-full border-b-[1px]  p-5 text-base font-medium text-black"
-            >
-              Jobs
-            </Link>
-            <Link
               href={"/visa"}
-              className="block w-full border-b-[1px]  p-5 text-base font-medium text-black"
+              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
             >
               Visa
+            </Link>
+            <Link
+              href={"/jobs"}
+              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
+            >
+              Jobs
             </Link>
             <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
               <Link href={"/faq"}>FAQ</Link>
             </li>
             <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
-              <Link href={"/ambassadors"}>Ambassadors</Link>
+              <Link href={"/ambassadors"}>Register As a Student</Link>
+            </li>
+            <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
+              <Link href={"/contact"}>Become An Agent</Link>
             </li>
             <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
               <Link href={"/contact"}>Contact</Link>

@@ -1,7 +1,7 @@
 import React from "react";
 export default function page() {
   return (
-    <main className="bg-slate-100 flex justify-center items-center">
+    <main className=" flex justify-center items-center">
       <section className="w-[60%] p-10 max-md:w-full max-md:p-4">
         <article>
           <h1 className="text-red-500 text-5xl font-bold my-10 max-md:text-3xl">Contact</h1>
