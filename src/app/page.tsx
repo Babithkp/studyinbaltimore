@@ -29,9 +29,9 @@ export default function Home() {
         alt="hero image"
         className="relative h-[130vh] w-full max-sm:h-[100vh] object-cover"
       />
-      <section className="absolute top-[25%] flex w-[50%] flex-col items-center justify-center max-md:w-[90%]">
+      <section className="absolute top-[25%] flex w-[50%]  flex-col items-center justify-center max-md:w-[80%]">
         <article className="my-10 text-white">
-          <h1 className="bg-red-500 px-14 py-10 text-5xl font-semibold max-md:p-4 max-md:text-3xl">
+          <h1 className="bg-red-500 px-14 py-10 text-5xl font-semibold max-md:p-4 max-md:text-2xl">
             Study in Baltimore - home to diverse and a vibrant student community
             in Baltimore MD, United States.
           </h1>

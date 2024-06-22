@@ -23,10 +23,10 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-between border-b-[1px] p-4 text-lg font-medium">
-      <figure className="h-14">
+      <figure className="h-14 w-14">
         <Link href={"/"}>
           <svg
-            className="h-[100%] w-[100%] max-md:m-0"
+            className=" h-full w-[10rem] object-cover max-md:m-0"
             width="306"
             height="91"
             viewBox="0 0 306 91"
