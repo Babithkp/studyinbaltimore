@@ -78,7 +78,7 @@ export default function Navbar() {
           <Link href={"/faq"}>FAQ</Link>
         </li>
         <li>
-          <Link href={"/ambassadors"}>Register As a Student</Link>
+          <Link href={"/ambassadors"}>Application Portal</Link>
         </li>
         <li>
           <Link href={"/contact"}>Become An Agent</Link>
@@ -139,7 +139,7 @@ export default function Navbar() {
               <Link href={"/faq"}>FAQ</Link>
             </li>
             <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
-              <Link href={"/ambassadors"}>Register As a Student</Link>
+              <Link href={"/ambassadors"}>Application Portal</Link>
             </li>
             <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
               <Link href={"/contact"}>Become An Agent</Link>

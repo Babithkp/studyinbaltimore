@@ -189,11 +189,9 @@ export default function Home() {
               Access to free education!
             </h3>
             <p className="col-start-2">
-              In baltimore, you can explore beautiful historical monuments,
-              theatres, galleries, and world-famous functionalist architecture,
-              and then dive in to a local quirky alternative scene where true
-              baltimore spirit thrives – just do not take yourself too seriously
-              and have fun!
+              International students can use our seamless application portal to
+              apply directly to our partner universities for master&apos;s and PhD
+              programs at no cost!
             </p>
             <Link
               href={"/"}
@@ -235,10 +233,10 @@ export default function Home() {
               Career & Professional networking Opportunities.
             </h3>
             <p className="col-start-2">
-              The universities are a backbone of the city and are connected to
-              many companies, research centres, NGOs, media, festivals and more.
-              Thanks to this, numerous work or internship opportunities will
-              emerge even during your studies.
+              The annual student data in Maryland shows that 72% of university
+              graduates in Maryland find jobs within 6 months of graduation.
+              International students can benefit from our international
+              student alumni network.
             </p>
             <Link
               href={"/"}
@@ -286,9 +284,9 @@ export default function Home() {
             <Image
               src={cardBg}
               alt="college background"
-              className="absolute h-full w-full object-cover blur-[3px]"
+              className="absolute h-full w-full object-cover"
             />
-            <h3 className="text-center text-4xl font-bold text-red-500 max-md:text-2xl z-20">
+            <h3 className="z-20 text-center text-4xl font-bold text-red-500 max-md:text-2xl">
               There is always someone you can ask
             </h3>
           </div>
