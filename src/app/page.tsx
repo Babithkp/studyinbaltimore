@@ -30,7 +30,7 @@ export default function Home() {
         <article className="my-10 text-white">
           <h1 className="bg-red-500 px-14 py-10 text-5xl font-semibold max-md:p-4 max-md:text-2xl">
             Study in Maryland - home to diverse and a vibrant student community
-            in Maryland MD, United States.
+            in Maryland, United States.
           </h1>
           <p className="bg-blue-600 p-8 text-lg font-medium max-md:p-4 max-sm:text-base">
             We enable international students to study in Maryland through
@@ -111,10 +111,10 @@ export default function Home() {
         </div>
         <div className="my-20 flex w-full flex-col flex-wrap items-center justify-center gap-3">
           <div className="flex flex-col items-center">
-            <span className="text-lg font-bold uppercase text-red-600 underline">
+            <span className="text-xl font-bold uppercase text-red-500 underline">
               what we do
             </span>
-            <h3 className="my-8 w-[80%] text-center text-4xl font-bold text-red-500 max-md:text-2xl">
+            <h3 className="my-8 w-[80%] text-center text-3xl font-bold text-red-500 max-md:text-lg">
               Direct Entry To Our Prestigious Partner Universities
             </h3>
             <p className="text-center">
