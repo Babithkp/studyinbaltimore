@@ -152,7 +152,7 @@ export default function Home() {
       <section className="mt-5 flex justify-center">
         <div className="grid w-[85%] gap-5 max-md:w-[95%] md:grid-cols-3 md:grid-rows-2">
           <div className="col-start-1 row-span-2 flex items-center">
-            <p className="my-8 text-5xl font-bold text-red-500 max-md:text-2xl">
+            <p className="my-8 text-5xl font-bold text-red-500 max-md:text-2xl text-center">
               Why choose us for your study abroad dreams?
             </p>
           </div>
@@ -194,27 +194,6 @@ export default function Home() {
               and then dive in to a local quirky alternative scene where true
               baltimore spirit thrives – just do not take yourself too seriously
               and have fun!
-            </p>
-            <Link
-              href={"/"}
-              className="col-start-2 text-lg font-medium text-red-500 underline"
-            >
-              MORE INFO
-            </Link>
-          </div>
-          <div className="grid grid-cols-[2rem,1fr] items-center gap-3">
-            <Image
-              src={icon2}
-              alt="city"
-              className="col-span-1 justify-self-center"
-            />
-            <h3 className="my-5 text-3xl font-bold text-red-500 max-md:text-2xl">
-            Streamlined Application Procedure
-            </h3>
-            <p className="col-start-2">
-              International students can use our seamless application portal to
-              apply directly to our partner universities for master&apos;s and PhD
-              programs at no cost!
             </p>
             <Link
               href={"/"}
