@@ -16,7 +16,7 @@ import coachingIcon from "../../public/coaching-vector.png";
 import visaIcon from "../../public/icon-visa.png";
 import financialIcon from "../../public/icon-financial.png";
 import CardApply from "@/components/cards/CardApply";
-import MarylandMap from "../../public/Baltimore-map.jpg"
+import MarylandMap from "../../public/baltimore-map.jpg"
 
 export default function Home() {
   return (
