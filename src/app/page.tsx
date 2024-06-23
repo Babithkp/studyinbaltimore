@@ -189,9 +189,11 @@ export default function Home() {
               Access to free education!
             </h3>
             <p className="col-start-2">
-              International students can use our seamless application portal to
-              apply directly to our partner universities for master&apos;s and PhD
-              programs at no cost!
+              In baltimore, you can explore beautiful historical monuments,
+              theatres, galleries, and world-famous functionalist architecture,
+              and then dive in to a local quirky alternative scene where true
+              baltimore spirit thrives – just do not take yourself too seriously
+              and have fun!
             </p>
             <Link
               href={"/"}
@@ -207,13 +209,12 @@ export default function Home() {
               className="col-span-1 justify-self-center"
             />
             <h3 className="my-5 text-3xl font-bold text-red-500 max-md:text-2xl">
-              Seamless Application Procedure
+            Streamlined Application Procedure
             </h3>
             <p className="col-start-2">
-              There is no need to compromise. baltimore offers very reasonable
-              prices of accommodation, food and public transport while
-              maintaining the world-class quality of education, state-of-the-art
-              facilities and innovative approach.
+              International students can use our seamless application portal to
+              apply directly to our partner universities for master&apos;s and PhD
+              programs at no cost!
             </p>
             <Link
               href={"/"}
