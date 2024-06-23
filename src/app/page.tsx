@@ -2,6 +2,7 @@ import Image from "next/image";
 import image from "../../public/backgroundHeroPage.jpg";
 import Link from "next/link";
 import icon1 from "../../public/city.svg";
+import icon2 from "../../public/rocket-graph.svg";
 import icon3 from "../../public/carnival.svg";
 import icon4 from "../../public/flag-point.svg";
 import cardBg from "../../public/backgroung-card.png";
@@ -181,19 +182,17 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-[2rem,1fr] items-center gap-3">
             <Image
-              src={icon3}
+              src={icon2}
               alt="city"
               className="col-span-1 justify-self-center"
             />
             <h3 className="my-5 text-3xl font-bold text-red-500 max-md:text-2xl">
-              Access to free education!
+            Streamlined Application Procedure
             </h3>
             <p className="col-start-2">
-              In Maryland, you can explore beautiful historical monuments,
-              theatres, galleries, and world-famous functionalist architecture,
-              and then dive in to a local quirky alternative scene where true
-              Maryland spirit thrives – just do not take yourself too seriously
-              and have fun!
+              International students can use our seamless application portal to
+              apply directly to our partner universities for master&apos;s and PhD
+              programs at no cost!
             </p>
             <Link
               href={"/"}
@@ -202,6 +201,7 @@ export default function Home() {
               MORE INFO
             </Link>
           </div>
+  
 
           <div className="grid grid-cols-[2rem,1fr] items-center gap-3">
             <Image
