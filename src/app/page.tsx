@@ -2,7 +2,6 @@ import Image from "next/image";
 import image from "../../public/backgroundHeroPage.jpg";
 import Link from "next/link";
 import icon1 from "../../public/city.svg";
-import icon2 from "../../public/rocket-graph.svg";
 import icon3 from "../../public/carnival.svg";
 import icon4 from "../../public/flag-point.svg";
 import cardBg from "../../public/backgroung-card.png";
@@ -17,6 +16,7 @@ import coachingIcon from "../../public/coaching-vector.png";
 import visaIcon from "../../public/icon-visa.png";
 import financialIcon from "../../public/icon-financial.png";
 import CardApply from "@/components/cards/CardApply";
+import MarylandMap from "../../public/Baltimore-map.jpg"
 
 export default function Home() {
   return (
@@ -29,18 +29,18 @@ export default function Home() {
       <section className="absolute top-[25%] flex w-[50%] flex-col items-center justify-center max-md:w-[80%]">
         <article className="my-10 text-white">
           <h1 className="bg-red-500 px-14 py-10 text-5xl font-semibold max-md:p-4 max-md:text-2xl">
-            Study in Baltimore - home to diverse and a vibrant student community
-            in Baltimore MD, United States.
+            Study in Maryland - home to diverse and a vibrant student community
+            in Maryland MD, United States.
           </h1>
           <p className="bg-blue-600 p-8 text-lg font-medium max-md:p-4 max-sm:text-base">
-            We enable international students to study in Baltimore through
+            We enable international students to study in Maryland through
             various scholarships, granting them free access to world-class
             education and career opportunities in the United States.
           </p>
         </article>
         <div className="flex max-sm:flex-col">
           <button className="rounded-md bg-white px-9 py-3 font-semibold text-red-500">
-            DISCOVER baltimore
+            DISCOVER Maryland
           </button>
         </div>
       </section>
@@ -61,7 +61,7 @@ export default function Home() {
                 alt="college"
                 className="max-md:w-26 max-md:h-26 h-40 w-40 object-contain"
               />
-              <p className="mr-10 text-center">The University of Baltimore</p>
+              <p className="mr-10 text-center">The University of Maryland</p>
             </figure>
             <figure className="flex flex-col items-center justify-center max-sm:w-full">
               <Image
@@ -70,7 +70,7 @@ export default function Home() {
                 className="max-md:w-26 max-md:h-26 h-40 w-80 object-contain"
               />
               <p className="mr-10 text-center">
-                Baltimore City Community College
+                Maryland City Community College
               </p>
             </figure>
             <figure className="flex flex-col items-center justify-center max-sm:w-full">
@@ -80,7 +80,7 @@ export default function Home() {
                 className="max-md:w-26 max-md:h-26 h-40 w-40 object-contain"
               />
               <p className="mr-10 text-center">
-                University of Maryland, Baltimore County
+                University of Maryland, Maryland County
               </p>
             </figure>
             <figure className="flex flex-col items-center justify-center max-sm:w-full">
@@ -189,10 +189,10 @@ export default function Home() {
               Access to free education!
             </h3>
             <p className="col-start-2">
-              In baltimore, you can explore beautiful historical monuments,
+              In Maryland, you can explore beautiful historical monuments,
               theatres, galleries, and world-famous functionalist architecture,
               and then dive in to a local quirky alternative scene where true
-              baltimore spirit thrives – just do not take yourself too seriously
+              Maryland spirit thrives – just do not take yourself too seriously
               and have fun!
             </p>
             <Link
@@ -278,15 +278,17 @@ export default function Home() {
               FAQ
             </Link>
           </div>
-          <div className="relative flex h-[28rem] w-[19rem] items-center justify-center bg-blue-500 max-md:h-[20rem] max-md:w-[100%]">
-            <Link
-              href={"/"}
-              className="text-center text-2xl font-bold text-white underline max-md:text-xl"
-            >
-              Ambassadors
-            </Link>
+          <div className="relative flex h-[28rem] w-[19rem] items-center justify-center max-md:h-[20rem] max-md:w-[100%]">
+            <Image
+              src={MarylandMap}
+              alt="college background"
+              className="absolute h-full w-full object-cover"
+            />
+            <h3 className="z-20 text-center text-4xl font-bold text-red-500 max-md:text-2xl">
+            Ambassadors
+            </h3>
           </div>
-          <div className="relative flex h-[28rem] w-[19rem] items-center justify-center bg-green-500 max-md:h-[20rem] max-md:w-[100%]">
+          <div className="relative flex h-[28rem] w-[19rem] items-center justify-center bg-blue-500 max-md:h-[20rem] max-md:w-[100%]">
             <Link
               href={"/"}
               className="text-center text-2xl font-bold text-white underline max-md:text-xl"
@@ -300,7 +302,7 @@ export default function Home() {
         <h3 className="pt-10 text-center text-5xl font-bold text-red-500 max-md:text-3xl">
           See for yourself!
         </h3>
-        <p className="mt-10 text-center">Instagram: #StudyInbaltimore</p>
+        <p className="mt-10 text-center">Instagram: #StudyInMaryland</p>
       </section>
     </main>
   );
