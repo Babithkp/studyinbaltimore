@@ -81,7 +81,7 @@ export default function Home() {
                 className="max-md:w-26 max-md:h-26 h-40 w-40 object-contain"
               />
               <p className="mr-10 text-center">
-                University of Maryland, Maryland County
+                University of Maryland, School Of Dentistry
               </p>
             </figure>
             <figure className="flex flex-col items-center justify-center max-sm:w-full">
@@ -169,7 +169,7 @@ export default function Home() {
             <p className="col-start-2">
               Through our organization&apos;s partnership with leading public
               universities in Maryland, we offer international students the
-              opportunity to pursue Master&apos;s and PhD degree programs with
+              opportunity to pursue Masters and PhD degree programs with
               fully funded scholarships provided by the Maryland State
               Department of Education.
             </p>
@@ -187,11 +187,11 @@ export default function Home() {
               className="col-span-1 justify-self-center"
             />
             <h3 className="my-5 text-3xl font-bold text-red-500 max-md:text-2xl">
-            Streamlined Application Procedure
+            Streamlined Application Procedure.
             </h3>
             <p className="col-start-2">
               International students can use our seamless application portal to
-              apply directly to our partner universities for master&apos;s and PhD
+              apply directly to our partner universities for masters and PhD
               programs at no cost!
             </p>
             <Link
