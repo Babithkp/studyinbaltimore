@@ -7,7 +7,7 @@ import icon3 from "../../public/carnival.svg";
 import icon4 from "../../public/flag-point.svg";
 import cardBg from "../../public/backgroung-card.png";
 import img1 from "../../public/universitiesLogo/bccc.png";
-import img2 from "../../public/universitiesLogo/maryland.jpg";
+import img2 from "../../public/universitiesLogo/marylandpng.png";
 import img3 from "../../public/universitiesLogo/universityOfBaltimorejpg.jpg";
 import img4 from "../../public/universitiesLogo/coppin.svg";
 import img5 from "../../public/universitiesLogo/morgan.png";
