@@ -83,7 +83,7 @@ export default function page() {
               <span className="ml-5 mr-10">Degree programs</span>
             </AccordionTrigger>
             <AccordionContent className=" ">
-            <p className="p-3 bg-slate-300 w-full">The following masters and phd programs are eligible for scholarships to study at one of our partner universities.</p>
+            <p className="p-3 bg-slate-300 w-full font-semibold">The following masters and phd programs are eligible for scholarships to study at one of our partner universities.</p>
               <ul>
                 <li className={dropdownTextClass}> Accounting</li>
                 <li className={dropdownTextClass}> Artificial Intelligence for Business.</li>
@@ -123,7 +123,7 @@ export default function page() {
               <span className="ml-5 mr-10">Admission requirements</span>
             </AccordionTrigger>
             <AccordionContent className=" ">
-            <p className="p-3 bg-slate-300 w-full">International students must meet the requirements to study at one of our partner universities on a fully funded scholarship.
+            <p className="p-3 bg-slate-300 w-full font-semibold">International students must meet the requirements to study at one of our partner universities on a fully funded scholarship.
             </p>
               <ul>
                 <li className={dropdownTextClass}> Bachelor degree certificate & transcripts: International students submit the orginal scanned copy of their completed degree certificate and transcript.
