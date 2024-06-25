@@ -83,8 +83,7 @@ export default function page() {
             </AccordionTrigger>
             <AccordionContent className=" ">
               <p className="w-full bg-slate-300 p-3 font-semibold">
-                The following masters and phd programs are eligible for
-                scholarships to study at one of our partner universities.
+              International students are eligible to study any of the following masters and phd programs at one of our partners universities.
               </p>
               <ul>
                 <li className={dropdownTextClass}> Accounting</li>
@@ -144,16 +143,14 @@ export default function page() {
             </AccordionTrigger>
             <AccordionContent className=" ">
               <p className="w-full bg-slate-300 p-3 font-semibold">
-                International students must meet the requirements to study at
-                one of our partner universities on a fully funded scholarship.
+              International students must meet the following admission requirements.
               </p>
               <ul >
                 <li className={dropdownTextClass + "text-start "}>
                   {" "}
                   <ul className="list-inside list-disc my-2 px-5 flex flex-col items-start justify-start">
                     <li>
-                      Bachelor degree certificate and transcript (For Masters
-                      programs)
+                      Bachelor degree certificate and transcript (For Masters programs)
                     </li>
                     <li>
                       Masters degree certificate and transcript(For PhD
@@ -167,11 +164,13 @@ export default function page() {
                 </li>
                 <li className={dropdownTextClass}>
                   {" "}
-                  IELTS/TOEFL: International students with degree certificates
-                  and transcripts in English language do not need to submit a
-                  English language profeciency certificate such as IELTS or
-                  TOEFL. International student with degree in foreign language
-                  will must submit IELTS or TOEFL certificates.
+                  To be eligible for a bachelors or a masters degree program at one of our partner universities on a state-funded scholarship, international students with degree certificates and transcripts in English language are not required to submit an English language proficiency certificate, such as IELTS or TOEFL. However, international students with degree certificates and transcripts in a foreign language (Not in English language) must submit an IELTS or TOEFL certificate.
+                  <ul className="w-full  text-start">
+                    <li>- [IELTS](<Link href={"https://ielts.org"} target="_blank" className="text-blue-800">https://ielts.org</Link>)
+                    </li>
+                    <li>- [TOEFL](<Link href={"https://www.ets.org/toefl.html"} target="_blank" className="text-blue-800">https://www.ets.org/toefl.html</Link>)
+                    </li>
+                  </ul>
                 </li>
                 <li className={dropdownTextClass}>
                   {" "}
@@ -185,13 +184,8 @@ export default function page() {
                   course evaluation and verification reports from academic
                   evaluation service{" "}
                 </li>
-                <li className={dropdownTextClass}>
-                  Motivation letter: a personal statement that describe why you
-                  want to study in Maryland, USA. What program you Would like to
-                  study and why you choose the program. Your academic and career
-                  goals, why you want to receive a scholarship{" "}
-                </li>
-                <li className={dropdownTextClass}> Statement of purpose</li>
+                
+                <li className={dropdownTextClass}> Statement of purpose: A personal statement, that tells the admissions committee who you are, what your academic and professional interests are, how you will add value to your chosen degree program and how the degree program aligns with your career goals.</li>
               </ul>
             </AccordionContent>
           </AccordionItem>
