@@ -16,7 +16,8 @@ import img6 from "../../../public/universitiesLogo/frostburg.png";
 import Link from "next/link";
 
 export default function page() {
-  const dropdownTextClass = "bg-slate-400 border-t-[1px] border-black py-1 text-center"
+  const dropdownTextClass =
+    "bg-slate-400 border-t-[1px] border-black py-1 text-center px-5";
   return (
     <main className="flex flex-col items-center justify-center">
       <section className="w-[90%] p-10 max-md:w-full max-md:p-4">
@@ -40,15 +41,13 @@ export default function page() {
             />
             <p className="">Maryland City Community College</p>
           </figure>
-          <figure className="flex flex-col items-center justify-center max-sm:w-full ">
+          <figure className="flex flex-col items-center justify-center max-sm:w-full">
             <Image
               src={img2}
               alt="college"
               className="max-md:w-26 max-md:h-26 h-40 w-40 object-contain"
             />
-            <p className="">
-            University Of Maryland 
-            </p>
+            <p className="">University Of Maryland</p>
           </figure>
           <figure className="flex flex-col items-center justify-center max-sm:w-full">
             <Image
@@ -76,18 +75,27 @@ export default function page() {
           </figure>
         </div>
       </section>
-      <section className="grid w-[90%] grid-cols-3 gap-5 max-md:grid-cols-1 mb-10">
+      <section className="mb-10 grid w-[90%] grid-cols-3 gap-5 max-md:grid-cols-1">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger className="bg-slate-100">
               <span className="ml-5 mr-10">Degree programs</span>
             </AccordionTrigger>
             <AccordionContent className=" ">
-            <p className="p-3 bg-slate-300 w-full font-semibold">The following masters and phd programs are eligible for scholarships to study at one of our partner universities.</p>
+              <p className="w-full bg-slate-300 p-3 font-semibold">
+                The following masters and phd programs are eligible for
+                scholarships to study at one of our partner universities.
+              </p>
               <ul>
                 <li className={dropdownTextClass}> Accounting</li>
-                <li className={dropdownTextClass}> Artificial Intelligence for Business.</li>
-                <li className={dropdownTextClass}> Applied Molecular Biology and Biochemistry</li>
+                <li className={dropdownTextClass}>
+                  {" "}
+                  Artificial Intelligence for Business.
+                </li>
+                <li className={dropdownTextClass}>
+                  {" "}
+                  Applied Molecular Biology and Biochemistry
+                </li>
                 <li className={dropdownTextClass}> Architecture </li>
                 <li className={dropdownTextClass}> Business Administration</li>
                 <li className={dropdownTextClass}> Business-Finance</li>
@@ -96,14 +104,26 @@ export default function page() {
                 <li className={dropdownTextClass}> Civil engineering </li>
                 <li className={dropdownTextClass}> Chemical Engineering </li>
                 <li className={dropdownTextClass}> Computer engineering </li>
-                <li className={dropdownTextClass}> Data analytics and visualization </li>
+                <li className={dropdownTextClass}>
+                  {" "}
+                  Data analytics and visualization{" "}
+                </li>
                 <li className={dropdownTextClass}> Electrical engineering </li>
                 <li className={dropdownTextClass}> Environmental science </li>
-                <li className={dropdownTextClass}> Global journalism and communications </li>
-                <li className={dropdownTextClass}> Global Affairs and Human Security</li>
+                <li className={dropdownTextClass}>
+                  {" "}
+                  Global journalism and communications{" "}
+                </li>
+                <li className={dropdownTextClass}>
+                  {" "}
+                  Global Affairs and Human Security
+                </li>
                 <li className={dropdownTextClass}> Health Administration</li>
                 <li className={dropdownTextClass}> Hospitality management </li>
-                <li className={dropdownTextClass}> Information systems/Technology </li>
+                <li className={dropdownTextClass}>
+                  {" "}
+                  Information systems/Technology{" "}
+                </li>
                 <li className={dropdownTextClass}> International business </li>
                 <li className={dropdownTextClass}> Management </li>
                 <li className={dropdownTextClass}> Marketing </li>
@@ -123,17 +143,56 @@ export default function page() {
               <span className="ml-5 mr-10">Admission requirements</span>
             </AccordionTrigger>
             <AccordionContent className=" ">
-            <p className="p-3 bg-slate-300 w-full font-semibold">International students must meet the requirements to study at one of our partner universities on a fully funded scholarship.
-            </p>
-              <ul>
-                <li className={dropdownTextClass}> Bachelor degree certificate & transcripts: International students submit the orginal scanned copy of their completed degree certificate and transcript.
+              <p className="w-full bg-slate-300 p-3 font-semibold">
+                International students must meet the requirements to study at
+                one of our partner universities on a fully funded scholarship.
+              </p>
+              <ul >
+                <li className={dropdownTextClass + "text-start "}>
+                  {" "}
+                  <ul className="list-inside list-disc my-2 px-5 flex flex-col items-start justify-start">
+                    <li>
+                      Bachelor degree certificate and transcript (For Masters
+                      programs)
+                    </li>
+                    <li>
+                      Masters degree certificate and transcript(For PhD
+                      programs)
+                    </li>
+                  </ul>
+                    <li>
+                      Only original scanned copies of bachelor or masters degree
+                      certificates and transcripts are accepted.
+                    </li>
                 </li>
-                <li className={dropdownTextClass}> IELTS/TOEFL: International students with degree certificates and transcripts in English language do not need to submit a English language profeciency certificate such as IELTS or TOEFL. International student with degree in foreign language will must submit IELTS or TOEFL certificates.
+                <li className={dropdownTextClass}>
+                  {" "}
+                  IELTS/TOEFL: International students with degree certificates
+                  and transcripts in English language do not need to submit a
+                  English language profeciency certificate such as IELTS or
+                  TOEFL. International student with degree in foreign language
+                  will must submit IELTS or TOEFL certificates.
                 </li>
-                <li className={dropdownTextClass}> Credential evaluation: all international student must have their degree certificate and transcripts verified and evulated by an approved academic credentials evaluation agency in the United States to attest that their academic credentials are authentic and genuine and that their Gpa scores it’s equivalent to the grade score standards accepted by institutions in the United States. We only accept course by course evaluation and verification reports from academic evaluation service </li>
-                <li className={dropdownTextClass}>Motivation letter: a personal statement that describe why you want to study in Maryland, USA. What program you Would like to study and why you choose the program. Your academic and career goals, why you want to receive a scholarship </li>
+                <li className={dropdownTextClass}>
+                  {" "}
+                  Credential evaluation: all international student must have
+                  their degree certificate and transcripts verified and evulated
+                  by an approved academic credentials evaluation agency in the
+                  United States to attest that their academic credentials are
+                  authentic and genuine and that their Gpa scores it’s
+                  equivalent to the grade score standards accepted by
+                  institutions in the United States. We only accept course by
+                  course evaluation and verification reports from academic
+                  evaluation service{" "}
+                </li>
+                <li className={dropdownTextClass}>
+                  Motivation letter: a personal statement that describe why you
+                  want to study in Maryland, USA. What program you Would like to
+                  study and why you choose the program. Your academic and career
+                  goals, why you want to receive a scholarship{" "}
+                </li>
                 <li className={dropdownTextClass}> Statement of purpose</li>
-                </ul>
+              </ul>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -142,9 +201,7 @@ export default function page() {
             <AccordionTrigger className="bg-slate-100">
               <span className="ml-5 mr-10">Admission deadline</span>
             </AccordionTrigger>
-            <AccordionContent className="text-lg">
-              content
-            </AccordionContent>
+            <AccordionContent className="text-lg">content</AccordionContent>
           </AccordionItem>
         </Accordion>
       </section>
