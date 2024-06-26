@@ -17,7 +17,7 @@ import coachingIcon from "../../public/coaching-vector.png";
 import visaIcon from "../../public/icon-visa.png";
 import financialIcon from "../../public/icon-financial.png";
 import CardApply from "@/components/cards/CardApply";
-import MarylandMap from "../../public/baltimore-map.jpg"
+import MarylandMap from "../../public/baltimore-map.jpg";
 
 export default function Home() {
   return (
@@ -33,10 +33,10 @@ export default function Home() {
             Study in Maryland - home to diverse and a vibrant student community
             in Maryland, United States.
           </h1>
-          <p className="bg-blue-600 p-8 text-lg font-medium max-md:p-4 max-sm:text-base">
-            We enable international students to study in Maryland through
-            various scholarships, granting them free access to world-class
-            education and career opportunities in the United States.
+          <p className="bg-blue-600 p-8 text-lg font-medium max-md:p-4 max-sm:text-base text-center">
+            We make it possible for international students to study in Maryland
+            through scholarships which provides them with free access to a
+            world-class education and career opportunities in Maryland, USA.
           </p>
         </article>
         <div className="flex max-sm:flex-col">
@@ -52,7 +52,7 @@ export default function Home() {
           </h2>
           <p className="px-5 text-center text-lg font-extralight">
             Each year we provide scholarship opportunities for more than 1000
-            international students from all over world to study a postgraduate
+            international students from worldwide to study a postgraduate
             or doctoral degree program at one of our partner universities.
           </p>
           <div className="my-10 flex w-full gap-5 text-center max-lg:flex-wrap max-sm:grid max-sm:grid-cols-2">
@@ -62,7 +62,7 @@ export default function Home() {
                 alt="college"
                 className="max-md:w-26 max-md:h-26 h-40 w-40 object-contain"
               />
-              <p >The University of Maryland</p>
+              <p>The University of Maryland</p>
             </figure>
             <figure className="flex flex-col items-center justify-center max-sm:w-full">
               <Image
@@ -70,9 +70,7 @@ export default function Home() {
                 alt="college"
                 className="max-md:w-26 max-md:h-26 h-40 w-80 object-contain"
               />
-              <p >
-                Maryland City Community College
-              </p>
+              <p>Maryland City Community College</p>
             </figure>
             <figure className="flex flex-col items-center justify-center max-sm:w-full">
               <Image
@@ -80,9 +78,7 @@ export default function Home() {
                 alt="college"
                 className="max-md:w-26 max-md:h-26 h-40 w-40 object-contain"
               />
-              <p >
-                University of Maryland, School Of Dentistry
-              </p>
+              <p>University of Maryland, School Of Dentistry</p>
             </figure>
             <figure className="flex flex-col items-center justify-center max-sm:w-full">
               <Image
@@ -90,7 +86,7 @@ export default function Home() {
                 alt="college"
                 className="max-md:w-26 max-md:h-26 h-40 w-40 object-contain"
               />
-              <p >Coppin State University</p>
+              <p>Coppin State University</p>
             </figure>
             <figure className="flex flex-col items-center justify-center max-sm:w-full">
               <Image
@@ -98,7 +94,7 @@ export default function Home() {
                 alt="college"
                 className="max-md:w-26 max-md:h-26 h-40 w-40 object-contain"
               />
-              <p >Morgan State University</p>
+              <p>Morgan State University</p>
             </figure>
             <figure className="flex flex-col items-center justify-center max-sm:w-full">
               <Image
@@ -106,7 +102,7 @@ export default function Home() {
                 alt="college"
                 className="max-md:w-26 max-md:h-26 h-40 w-40 object-cover"
               />
-              <p >Frostburg State University</p>
+              <p>Frostburg State University</p>
             </figure>
           </div>
         </div>
@@ -153,7 +149,7 @@ export default function Home() {
       <section className="mt-5 flex justify-center">
         <div className="grid w-[85%] gap-5 max-md:w-[95%] md:grid-cols-3 md:grid-rows-2">
           <div className="col-start-1 row-span-2 flex items-center">
-            <p className="my-8 text-5xl font-bold text-red-500 max-md:text-2xl text-center">
+            <p className="my-8 text-center text-5xl font-bold text-red-500 max-md:text-2xl">
               Why choose us for your study abroad dreams?
             </p>
           </div>
@@ -169,8 +165,8 @@ export default function Home() {
             <p className="col-start-2">
               Through our organization&apos;s partnership with leading public
               universities in Maryland, we offer international students the
-              opportunity to pursue Masters and PhD degree programs with
-              fully funded scholarships provided by the Maryland State
+              opportunity to pursue Masters and PhD degree programs with fully
+              funded scholarships provided by the Maryland State
               Department of Education.
             </p>
             <Link
@@ -187,7 +183,7 @@ export default function Home() {
               className="col-span-1 justify-self-center"
             />
             <h3 className="my-5 text-3xl font-bold text-red-500 max-md:text-2xl">
-            Streamlined Application Procedure.
+              Streamlined Application Procedure.
             </h3>
             <p className="col-start-2">
               International students can use our seamless application portal to
@@ -201,7 +197,6 @@ export default function Home() {
               MORE INFO
             </Link>
           </div>
-  
 
           <div className="grid grid-cols-[2rem,1fr] items-center gap-3">
             <Image
@@ -285,7 +280,7 @@ export default function Home() {
               className="absolute h-full w-full object-cover"
             />
             <h3 className="z-20 text-center text-4xl font-bold text-red-500 max-md:text-2xl">
-            Ambassadors
+              Ambassadors
             </h3>
           </div>
           <div className="relative flex h-[28rem] w-[19rem] items-center justify-center bg-blue-500 max-md:h-[20rem] max-md:w-[100%]">

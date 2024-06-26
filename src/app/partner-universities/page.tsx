@@ -82,8 +82,10 @@ export default function page() {
               <span className="ml-5 mr-10">Degree programs</span>
             </AccordionTrigger>
             <AccordionContent className=" ">
-              <p className="w-full bg-slate-300 p-3 font-semibold">
-              International students are eligible to study any of the following masters and phd programs at one of our partners universities.
+              <p className="w-full bg-slate-300 p-3 text-center font-semibold">
+                International students are eligible to study any of the
+                following masters and phd programs at one of our
+                partners universities.
               </p>
               <ul>
                 <li className={dropdownTextClass}> Accounting</li>
@@ -143,32 +145,59 @@ export default function page() {
             </AccordionTrigger>
             <AccordionContent className=" ">
               <p className="w-full bg-slate-300 p-3 font-semibold">
-              International students must meet the following admission requirements.
+                International students must meet the following
+                admission requirements.
               </p>
-              <ul >
-                <li className={dropdownTextClass + "text-start "}>
+              <ul>
+                <li className={dropdownTextClass + "text-start"}>
                   {" "}
-                  <ul className="list-inside list-disc my-2 px-5 flex flex-col items-start justify-start">
+                  <ul className="my-2 flex list-inside list-disc flex-col items-start justify-start px-5">
                     <li>
-                      Bachelor degree certificate and transcript (For Masters programs)
+                      Bachelor degree certificate and transcript (For Masters
+                      programs)
                     </li>
                     <li>
                       Masters degree certificate and transcript(For PhD
                       programs)
                     </li>
                   </ul>
-                    <li>
-                      Only original scanned copies of bachelor or masters degree
-                      certificates and transcripts are accepted.
-                    </li>
+                  <li>
+                    Only original scanned copies of bachelor or masters degree
+                    certificates and transcripts are accepted.
+                  </li>
                 </li>
                 <li className={dropdownTextClass}>
                   {" "}
-                  To be eligible for a bachelors or a masters degree program at one of our partner universities on a state-funded scholarship, international students with degree certificates and transcripts in English language are not required to submit an English language proficiency certificate, such as IELTS or TOEFL. However, international students with degree certificates and transcripts in a foreign language (Not in English language) must submit an IELTS or TOEFL certificate.
-                  <ul className="w-full  text-start">
-                    <li>- [IELTS](<Link href={"https://ielts.org"} target="_blank" className="text-blue-800">https://ielts.org</Link>)
+                  IELTS/TOEFL: To be eligible for a bachelors or a masters degree program at
+                  one of our partner universities on a state-funded scholarship,
+                  international students with degree certificates and
+                  transcripts in English language are not required to submit an
+                  English language proficiency certificate, such as IELTS or
+                  TOEFL. However, international students with degree
+                  certificates and transcripts in a foreign language (Not in
+                  English language) must submit an IELTS or TOEFL certificate.
+                  <ul className="w-full text-center my-3">
+                    <li>
+                      - IELTS:
+                      <Link
+                        href={"https://ielts.org"}
+                        target="_blank"
+                        className="text-blue-800 ml-2"
+                      >
+                        https://ielts.org
+                      </Link>
+                      
                     </li>
-                    <li>- [TOEFL](<Link href={"https://www.ets.org/toefl.html"} target="_blank" className="text-blue-800">https://www.ets.org/toefl.html</Link>)
+                    <li>
+                      - TOEFL:
+                     <Link
+                        href={"https://www.ets.org/toefl.html"}
+                        target="_blank"
+                        className="text-blue-800 ml-2"
+                      >
+                        https://www.ets.org/toefl.html
+                      </Link>
+                      
                     </li>
                   </ul>
                 </li>
@@ -184,8 +213,15 @@ export default function page() {
                   course evaluation and verification reports from academic
                   evaluation service{" "}
                 </li>
-                
-                <li className={dropdownTextClass}> Statement of purpose: A personal statement, that tells the admissions committee who you are, what your academic and professional interests are, how you will add value to your chosen degree program and how the degree program aligns with your career goals.</li>
+
+                <li className={dropdownTextClass}>
+                  {" "}
+                  Statement of purpose: A personal statement, that tells the
+                  admissions committee who you are, what your academic and
+                  professional interests are, how you will add value to your
+                  chosen degree program and how the degree program aligns with
+                  your career goals.
+                </li>
               </ul>
             </AccordionContent>
           </AccordionItem>
