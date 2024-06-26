@@ -168,50 +168,65 @@ export default function page() {
                 </li>
                 <li className={dropdownTextClass}>
                   {" "}
-                  IELTS/TOEFL: To be eligible for a bachelors or a masters degree program at
-                  one of our partner universities on a state-funded scholarship,
-                  international students with degree certificates and
-                  transcripts in English language are not required to submit an
-                  English language proficiency certificate, such as IELTS or
-                  TOEFL. However, international students with degree
-                  certificates and transcripts in a foreign language (Not in
-                  English language) must submit an IELTS or TOEFL certificate.
-                  <ul className="w-full text-center my-3">
+                  IELTS/TOEFL: To be eligible for a bachelors or a masters
+                  degree program at one of our partner universities on a
+                  state-funded scholarship, international students with degree
+                  certificates and transcripts in English language are not
+                  required to submit an English language proficiency
+                  certificate, such as IELTS or TOEFL. However, international
+                  students with degree certificates and transcripts in a foreign
+                  language (Not in English language) must submit an IELTS or
+                  TOEFL certificate.
+                  <ul className="my-3 w-full text-center">
                     <li>
                       - IELTS:
                       <Link
                         href={"https://ielts.org"}
                         target="_blank"
-                        className="text-blue-800 ml-2"
+                        className="ml-2 text-blue-800"
                       >
                         https://ielts.org
                       </Link>
-                      
                     </li>
                     <li>
                       - TOEFL:
-                     <Link
+                      <Link
                         href={"https://www.ets.org/toefl.html"}
                         target="_blank"
-                        className="text-blue-800 ml-2"
+                        className="ml-2 text-blue-800"
                       >
                         https://www.ets.org/toefl.html
                       </Link>
-                      
                     </li>
                   </ul>
                 </li>
-                <li className={dropdownTextClass}>
+                <li className={dropdownTextClass + " flex flex-col gap-5"}>
                   {" "}
-                  Credential evaluation: all international student must have
-                  their degree certificate and transcripts verified and evulated
-                  by an approved academic credentials evaluation agency in the
-                  United States to attest that their academic credentials are
-                  authentic and genuine and that their Gpa scores it’s
-                  equivalent to the grade score standards accepted by
-                  institutions in the United States. We only accept course by
-                  course evaluation and verification reports from academic
-                  evaluation service{" "}
+                  <span>
+                    Credential Evaluation: It is mandatory for all international
+                    students to submit an evaluation report of their academic
+                    credentials in other to be eligible for admission and a
+                    scholarship to study at one of our partner universities.
+                  </span>
+                  <span>
+                    An academic credential evaluation in the United States is a
+                    process where an academic evaluation agency in the United
+                    States compares your academic records from your home country
+                    to the U.S. academic equivalents. This evaluation confirms
+                    the authenticity of your academic transcripts, certificates,
+                    recognizes the status of the academic document issuing
+                    institution, and determines the U.S equivalency of your
+                    program of study. It provides detailed information on
+                    individual course credits, including the U.S. equivalent of
+                    course titles, grade points average (GPA). These evaluations
+                    help universities in the U.S understand and assess your
+                    educational background on par with U.S. academic standards.
+                  </span>
+                  <span>
+                    International students can get their academic documents
+                    evaluated and verified by an academic evaluation
+                    service in Maryland
+                  </span>
                 </li>
 
                 <li className={dropdownTextClass}>
