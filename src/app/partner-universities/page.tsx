@@ -167,8 +167,10 @@ export default function page() {
                   </li>
                 </li>
                 <li className={dropdownTextClass}>
-                  {" "}
-                  IELTS/TOEFL: To be eligible for a bachelors or a masters
+                  <span className="font-bold mr-2">
+                  IELTS/TOEFL: 
+                  </span>
+                  To be eligible for a bachelors or a masters
                   degree program at one of our partner universities on a
                   state-funded scholarship, international students with degree
                   certificates and transcripts in English language are not
@@ -203,7 +205,10 @@ export default function page() {
                 <li className={dropdownTextClass + " flex flex-col gap-5"}>
                   {" "}
                   <span>
-                    Credential Evaluation: It is mandatory for all international
+                  <span className="font-bold mr-2">
+                  Credential Evaluation:
+                  </span>
+                    It is mandatory for all international
                     students to submit an evaluation report of their academic
                     credentials in other to be eligible for admission and a
                     scholarship to study at one of our partner universities.
