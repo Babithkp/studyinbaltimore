@@ -74,7 +74,7 @@ export default function Navbar() {
           <Link href={"/applicationPortal"}>Application Portal</Link>
         </li>
         <li>
-          <Link href={"/contact"}>Become An Agent</Link>
+          <Link href={"/becomeAnAgent"}>Become An Agent</Link>
         </li>
         <li>
           <Link href={"/contact"}>Contact</Link>
@@ -135,7 +135,7 @@ export default function Navbar() {
               <Link href={"/applicationPortal"}>Application Portal</Link>
             </li>
             <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
-              <Link href={"/contact"}>Become An Agent</Link>
+              <Link href={"/becomeAnAgent"}>Become An Agent</Link>
             </li>
             <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
               <Link href={"/contact"}>Contact</Link>

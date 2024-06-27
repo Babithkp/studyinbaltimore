@@ -1,4 +1,5 @@
-import { IoMdArrowDropdown } from "react-icons/io";
+import Link from "next/link";
+
 export default function page() {
   return (
     <main className="flex items-center justify-center">
@@ -52,9 +53,9 @@ export default function page() {
             </ul>
           </div>
         </article>
-        <button className="h-fit w-fit rounded-md bg-red-500 px-3 py-2 text-lg uppercase text-white">
+        <Link href={"applicationPortal/addApplication/"} className="h-fit w-fit rounded-md bg-red-500 px-3 py-2 text-lg uppercase text-white">
           Application portal
-        </button>
+        </Link>
       </section>
     </main>
   );
