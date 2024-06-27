@@ -7,7 +7,7 @@ import Footer from "@/components/nav-foot/Footer";
 const inter = Poppins({ subsets: ["latin"],weight: ["100","200","300","400","500","600","700","800","900"] });
 
 export const metadata: Metadata = {
-  title: "Study in baltimore",
+  title: "Study in Maryland",
   description: "Study in the heart of the world",
 };
 
