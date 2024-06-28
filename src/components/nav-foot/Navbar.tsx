@@ -77,6 +77,9 @@ export default function Navbar() {
           <Link href={"/becomeAnAgent"}>Become An Agent</Link>
         </li>
         <li>
+          <Link href={"/referralProgram"}>Referral Program</Link>
+        </li>
+        <li>
           <Link href={"/contact"}>Contact</Link>
         </li>
       </ul>
@@ -90,8 +93,8 @@ export default function Navbar() {
             <GiHamburgerMenu size={"1.7rem"} />
           </div>
         </AlertDialogTrigger>
-        <AlertDialogContent className="h-[50rem] w-[15rem]">
-          <ul className="relative h-full flex-wrap gap-10 text-black">
+        <AlertDialogContent className="h-[50rem] w-[15rem]  ">
+          <ul className=" h-full flex-wrap gap-10 text-black">
             <Link
               href={"/"}
               className="block w-full border-b-[1px] bg-red-500 p-5 text-base font-medium text-white"
@@ -138,11 +141,14 @@ export default function Navbar() {
               <Link href={"/becomeAnAgent"}>Become An Agent</Link>
             </li>
             <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
+              <Link href={"/referralProgram"}>Referral Program</Link>
+            </li>
+            <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
               <Link href={"/contact"}>Contact</Link>
             </li>
           </ul>
 
-          <AlertDialogCancel className="absolute -left-20 top-2 z-[100] border-none bg-transparent hover:bg-transparent">
+          <AlertDialogCancel className="absolute right-[11rem] -top-[48rem] z-[-1] border-none w-full  h-[200%] bg-white hover:bg-transparent ">
             <RiCloseCircleFill
               size={"2.5rem"}
               color="white"

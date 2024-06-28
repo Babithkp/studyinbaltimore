@@ -45,7 +45,7 @@ export default function pages() {
           </p>
         </article>
         <form>
-          <h4 className="my-5 border-b-[1px] border-blue-500 text-lg">
+          <h4 className="my-5 border-b-[1px] border-red-500 text-lg">
             Student Details
           </h4>
           
