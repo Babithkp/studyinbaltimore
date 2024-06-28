@@ -1,9 +1,9 @@
 // components/Portal.js
-import { useEffect, useRef } from 'react';
-import { createPortal } from 'react-dom';
+import { useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 
-const Portal = ({ children }:any) => {
-  const el = useRef(document.createElement('div'));
+const Portal = ({ children }: any) => {
+  const el = useRef(document.createElement("div"));
 
   useEffect(() => {
     const currentEl = el.current;

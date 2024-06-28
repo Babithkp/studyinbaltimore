@@ -5,6 +5,8 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiCloseCircleFill } from "react-icons/ri";
+import React from "react";
+import AlertDialoge from '../../components/AlertDialog';
 
 import {
   AlertDialog,
@@ -20,6 +22,15 @@ import {
 
 export default function Navbar() {
   const [menuState, setMenustate] = useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const openDialog = () => {
+    setIsDialogOpen(true);
+  };
+
+  const closeDialog = () => {
+    setIsDialogOpen(false);
+  };
 
   return (
     <nav className="flex justify-between border-b-[1px] p-4 text-lg font-medium">
@@ -83,80 +94,12 @@ export default function Navbar() {
           <Link href={"/contact"}>Contact</Link>
         </li>
       </ul>
+      <button onClick={openDialog}  className="flex items-center justify-center gap-2 text-red-500 md:hidden">
+      <GiHamburgerMenu size={"1.7rem"} />
+        </button>
+      <AlertDialoge isOpen={isDialogOpen} onClose={closeDialog} />
 
-      <AlertDialog>
-        <AlertDialogTrigger>
-          <div
-            className="flex items-center justify-center gap-2 text-red-500 md:hidden"
-            onClick={() => setMenustate(!menuState)}
-          >
-            <GiHamburgerMenu size={"1.7rem"} />
-          </div>
-        </AlertDialogTrigger>
-        <AlertDialogContent className="h-[50rem] w-[15rem]  ">
-          <ul className=" h-full flex-wrap gap-10 text-black">
-            <Link
-              href={"/"}
-              className="block w-full border-b-[1px] bg-red-500 p-5 text-base font-medium text-white"
-            >
-              <p>Home</p>
-            </Link>
-            <Link
-              href={"/aboutus"}
-              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
-            >
-              About Us
-            </Link>
-            <Link
-              href={"/partner-universities"}
-              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
-            >
-              Partner Universities
-            </Link>
-            <Link
-              href={"/Scholarships"}
-              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
-            >
-              Scholarships
-            </Link>
-            <Link
-              href={"/student-life"}
-              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
-            >
-              Student Life
-            </Link>
-            <Link
-              href={"/visa"}
-              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
-            >
-              Visa
-            </Link>
-            <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
-              <Link href={"/faq"}>FAQ</Link>
-            </li>
-            <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
-              <Link href={"/applicationPortal"}>Application Portal</Link>
-            </li>
-            <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
-              <Link href={"/becomeAnAgent"}>Become An Agent</Link>
-            </li>
-            <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
-              <Link href={"/referralProgram"}>Referral Program</Link>
-            </li>
-            <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
-              <Link href={"/contact"}>Contact</Link>
-            </li>
-          </ul>
-
-          <AlertDialogCancel className="absolute right-[11rem] -top-[48rem] z-[-1] border-none w-full  h-[200%] bg-white hover:bg-transparent ">
-            <RiCloseCircleFill
-              size={"2.5rem"}
-              color="white"
-              className="z-[100]"
-            />
-          </AlertDialogCancel>
-        </AlertDialogContent>
-      </AlertDialog>
+      
     </nav>
   );
 }
