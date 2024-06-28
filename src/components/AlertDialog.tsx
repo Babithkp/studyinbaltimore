@@ -16,10 +16,10 @@ const AlertDialog = ({ isOpen, onClose }: any) => {
   return (
     <Portal>
       <div
-        className="fixed right-0 top-0 z-40 flex h-full w-full items-center justify-end overflow-auto bg-[#00000080] md:hidden"
+        className="fixed right-0 top-0 z-40 flex h-full w-full items-center justify-end overflow-auto bg-[#00000080] md:hidden "
         onClick={handleOverlayClick}
       >
-        <div className="border bg-white h-full">
+        <div className="border bg-white h-full pointer-events-auto">
           <ul className="h-full w-full flex-wrap gap-10 text-black">
             <Link
               onClick={() => onClose()}

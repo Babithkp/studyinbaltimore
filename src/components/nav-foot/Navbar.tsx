@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiCloseCircleFill } from "react-icons/ri";
 import React from "react";
-import AlertDialoge from '../../components/AlertDialog';
 
 import {
   AlertDialog,
@@ -21,6 +20,7 @@ import {
 } from "@/components/ui/alert-dialog";
 
 export default function Navbar() {
+  const newRef = useRef<HTMLButtonElement>(null)
   const [menuState, setMenustate] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
@@ -30,6 +30,13 @@ export default function Navbar() {
 
   const closeDialog = () => {
     setIsDialogOpen(false);
+  };
+
+  const handleFirstButtonClick = () => {
+    // Programmatically click the second button
+    if (newRef.current) {
+      newRef.current.click();
+    }
   };
 
   return (
@@ -94,12 +101,87 @@ export default function Navbar() {
           <Link href={"/contact"}>Contact</Link>
         </li>
       </ul>
-      <button onClick={openDialog}  className="flex items-center justify-center gap-2 text-red-500 md:hidden">
+      {/* <button onClick={openDialog}  className="flex items-center justify-center gap-2 text-red-500 md:hidden">
       <GiHamburgerMenu size={"1.7rem"} />
         </button>
-      <AlertDialoge isOpen={isDialogOpen} onClose={closeDialog} />
+      <AlertDialoge isOpen={isDialogOpen} onClose={closeDialog} /> */}
 
-      
+      <AlertDialog >
+        <AlertDialogTrigger>
+          <div
+            className="flex items-center justify-center gap-2 text-red-500 md:hidden"
+            onClick={() => setMenustate(!menuState)}
+          >
+            <GiHamburgerMenu size={"1.7rem"} />
+          </div>
+        </AlertDialogTrigger>
+        <AlertDialogContent className="h-[50rem] w-full bg-transparent overflow-scroll" onClick={()=>handleFirstButtonClick()}>
+          <section className="h-full bg-transparent grid grid-cols-[40%,1fr]" >
+          <div className="bg-transparent"></div>
+          
+          <ul className=" h-full flex-wrap gap-10 text-black bg-white" >
+            <Link
+              href={"/"}
+              className="block w-full border-b-[1px] bg-red-500 p-5 text-base font-medium text-white"
+            >
+              <p>Home</p>
+            </Link>
+            <Link
+              href={"/aboutus"}
+              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
+            >
+              About Us
+            </Link>
+            <Link
+              href={"/partner-universities"}
+              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
+            >
+              Partner Universities
+            </Link>
+            <Link
+              href={"/Scholarships"}
+              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
+            >
+              Scholarships
+            </Link>
+            <Link
+              href={"/student-life"}
+              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
+            >
+              Student Life
+            </Link>
+            <Link
+              href={"/visa"}
+              className="block w-full border-b-[1px] p-5 text-base font-medium text-black"
+            >
+              Visa
+            </Link>
+            <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
+              <Link href={"/faq"}>FAQ</Link>
+            </li>
+            <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
+              <Link href={"/applicationPortal"}>Application Portal</Link>
+            </li>
+            <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
+              <Link href={"/becomeAnAgent"}>Become An Agent</Link>
+            </li>
+            <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
+              <Link href={"/referralProgram"}>Referral Program</Link>
+            </li>
+            <li className="flex w-full items-center border-b-[1px] p-5 text-base font-medium text-black hover:bg-red-500 hover:text-white">
+              <Link href={"/contact"}>Contact</Link>
+            </li>
+          </ul>
+          </section>
+          <AlertDialogCancel ref={newRef} className="absolute right-[5rem] -top-[48rem] z-[-1] border-none w-full  h-[200%] bg-transparent hover:bg-transparent ">
+            <RiCloseCircleFill
+              size={"2.5rem"}
+              color="white"
+              className="z-[100]"
+            />
+          </AlertDialogCancel>
+        </AlertDialogContent>
+      </AlertDialog>
     </nav>
   );
 }
