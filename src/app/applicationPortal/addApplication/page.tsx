@@ -9,22 +9,32 @@ import { MdLocalPhone } from "react-icons/md";
 export default function pages() {
   return (
     <main className="flex items-center justify-center">
-      <section className="w-[60%] p-10 max-md:w-full max-md:p-4 border">
+      <section className="w-[60%] border p-10 max-md:w-full max-md:p-4">
         <article>
           <h1 className="my-10 text-5xl font-bold text-red-500 max-md:text-3xl">
-            Overseas Education Placement Form
+            Application portal
           </h1>
           <p className="text-md my-5">
-            Your first steps to actualising your educational and career
-            progression goals through Jestone Education starts here!
+            International students can use our online application portal to
+            apply for the study in Maryland scholarship to study a masters or
+            PhD degree program.
           </p>
           <p className="text-md my-5">
-            Jestone Education ensures a seamless transition from one level of
-            education to the other without hitches. We achieve this in
-            partnership with reputable colleges and universities across all
-            continents of the world. Start your application today and gain
-            admission into any of our partner institutions by completing the
-            application form below:
+            All applicants should enter their details correctly and upload all
+            the required application documents to submit their study in Maryland
+            scholarship application.
+          </p>
+          <p className="text-md my-5">
+            Successful study in Maryland scholarship recipients will receive an
+            admission to study at one of our partner universities.
+          </p>
+          <p className="text-md my-5">
+            International students are not required to pay any
+            application/admission fees to study at one of our partner
+            university.
+          </p>
+          <p className="text-md my-5">
+            Fill out the online application form and submit your application.
           </p>
           <h2 className="my-10 text-5xl font-bold text-red-500 max-md:text-3xl">
             Pre-Application Form
@@ -36,50 +46,204 @@ export default function pages() {
         </article>
         <form>
           <h4 className="my-5 border-b-[1px] border-blue-500 text-lg">
-            Programme Details
+            Student Details
           </h4>
-          <div>
-            <label className="font-semibold text-sm">
-              Study Destination <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <TfiMenuAlt className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <select className="w-full px-2 text-sm focus:outline-blue-400">
-                <option value="">--Please select option--</option>
-                <option value="">--Please select other option--</option>
-              </select>
-            </div>
-          </div>
+          
           <div className="my-5">
-            <label className="font-semibold text-sm">
-              Programme Type <span className="text-red-500">*</span>
+            <label className="text-sm font-semibold">
+              First Name <span className="text-red-500">*</span>
             </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <TfiMenuAlt className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <select className="w-full px-2 text-sm focus:outline-blue-400">
-                <option value="">--Please select option--</option>
-                <option value="">--Please select other option--</option>
-              </select>
-            </div>
-          </div>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-              Course of Study <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <IoMdHome className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <GoPersonFill className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
               <input
                 type="text"
                 className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Course of Study"
+                placeholder="Your First Name "
               />
             </div>
           </div>
           <div className="my-5">
-            <label className="font-semibold text-sm">
-              Programme Start Month <span className="text-red-500">*</span>
+            <label className="text-sm font-semibold">
+              Last Name <span className="text-red-500">*</span>
             </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <GoPersonFill className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder="Your Last Name "
+              />
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+              Gender <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <TfiMenuAlt className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+              <select className="w-full px-2 text-sm focus:outline-blue-400">
+                <option value="">--Please select option--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+              Address <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <IoMdHome className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder="First Line "
+              />
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+              Town/City <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <IoMdHome className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder="Town/City "
+              />
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+              State / Province / Region <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <IoMdHome className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder="State / Province / Region "
+              />
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+              Country <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <IoMdHome className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder="Country "
+              />
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+              Date of Birth <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <FaCalendarAlt
+                className="bg-slate-100 p-[0.4rem]"
+                size={"2rem"}
+              />
+              <input
+                type="date"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder="Country "
+              />
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+              Nationality <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <GoPersonFill className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder="Nationality "
+              />
+            </div>
+          </div>
+          <div className="my-5 md:w-[50%]">
+            <label className="text-sm font-semibold">
+              Email Address<span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <IoIosMail className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder="Email Address"
+              />
+            </div>
+          </div>
+          <div className="my-5 md:w-[50%]">
+            <label className="text-sm font-semibold">
+              Phone number<span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <MdLocalPhone className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder="Phone Number"
+              />
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+              Country of Permanent Residence{" "}
+              <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <GoPersonFill className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder="Country of Permanent Residence "
+              />
+            </div>
+          </div>
+          
+          
+          <div>
+            <label className="text-sm font-semibold">
+              Programme Type <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <TfiMenuAlt className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+              <select className="w-full px-2 text-sm focus:outline-blue-400">
+                <option value="">--Please select option--</option>
+                <option value="Masters Degree">Masters Degree</option>
+                <option value="PhD Degree">PhD Degree</option>
+              </select>
+            </div>
+          </div>
+          
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+              Study Program/course <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
+              <IoMdHome className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder="Study Program/course"
+              />
+            </div>
+          </div>
+          
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+              Crouse Start Month <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
               <TfiMenuAlt className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
               <select className="w-full px-2 text-sm focus:outline-blue-400">
                 <option value="">--Please select option--</option>
@@ -99,209 +263,30 @@ export default function pages() {
             </div>
           </div>
           <div className="my-5">
-            <label className="font-semibold text-sm">
-              Programme Start Year <span className="text-red-500">*</span>
+            <label className="text-sm font-semibold">
+              Course Start Year <span className="text-red-500">*</span>
             </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
+            <div className="flex rounded-sm border-[1.9px] border-slate-300 md:w-[50%]">
               <IoMdHome className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
               <input
                 type="text"
                 className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Programme Start Year"
-              />
-            </div>
-          </div>
-          <h4 className="my-5 border-b-[1px] border-blue-500 text-lg">
-            Student Details
-          </h4>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-              Title <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <IoMdHome className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="text"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Title "
+                placeholder="Course Start Year"
               />
             </div>
           </div>
           <div className="my-5">
-            <label className="font-semibold text-sm">
-            Full Name <span className="text-red-500">*</span>
+            <label className="text-sm font-semibold">
+              Upload copy of Identification
+              <span className="text-red-500">*</span>
             </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <GoPersonFill className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="text"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Your Name "
-              />
-            </div>
-          </div>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-            Gender  <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <TfiMenuAlt className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <select className="w-full px-2 text-sm focus:outline-blue-400">
-                <option value="">--Please select option--</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-              </select>
-            </div>
-          </div>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-            Address <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <IoMdHome className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="text"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="First Line "
-              />
-            </div>
-          </div>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-            Town/City <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <IoMdHome className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="text"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Town/City "
-              />
-            </div>
-          </div>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-            State / Province / Region <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <IoMdHome className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="text"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="State / Province / Region "
-              />
-            </div>
-          </div>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-            Country <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <IoMdHome className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="text"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Country "
-              />
-            </div>
-          </div>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-            Date of Birth <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <FaCalendarAlt className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="date"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Country "
-              />
-            </div>
-          </div>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-            Nationality <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <GoPersonFill className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="text"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Nationality "
-              />
-            </div>
-          </div>
-          <div className="my-5 md:w-[50%]">
-            <label className="font-semibold text-sm">
-            Email <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <IoIosMail className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="text"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Email "
-              />
-            </div>
-          </div>
-          <div className="my-5 md:w-[50%]">
-            <label className="font-semibold text-sm">
-            Phone <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <MdLocalPhone className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="text"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Phone "
-              />
-            </div>
-          </div>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-            Country of Permanent Residence <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <GoPersonFill className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="text"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Country of Permanent Residence "
-              />
-            </div>
-          </div>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-            Passport Number <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <GoPersonFill className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="text"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Passport Number "
-              />
-            </div>
-          </div>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-            Passport Expiry Date <span className="text-red-500">*</span>
-            </label>
-            <div className="flex md:w-[50%] rounded-sm border-[1.9px] border-slate-300">
-              <GoPersonFill className="bg-slate-100 p-[0.4rem]" size={"2rem"} />
-              <input
-                type="date"
-                className="w-full px-2 text-sm focus:outline-blue-400"
-                placeholder="Passport Expiry Date "
-              />
-            </div>
-          </div>
-          <div className="my-5">
-            <label className="font-semibold text-sm">
-            Upload Passport Scanned Copy <span className="text-red-500">*</span>
-            </label>
-            <div className="flex  rounded-sm border-[1.9px] border-slate-300">
-              <button type="button" className="px-2 py-1 bg-blue-500 text-white">Browse</button>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300">
+              <button
+                type="button"
+                className="bg-blue-500 px-2 py-1 text-white"
+              >
+                Browse
+              </button>
               <input
                 type="text"
                 className="w-full px-2 text-sm focus:outline-blue-400"
@@ -311,11 +296,17 @@ export default function pages() {
             </div>
           </div>
           <div className="my-5">
-            <label className="font-semibold text-sm">
-            Upload scanned copies of Educational Certificates and Transcripts <span className="text-red-500">*</span>
+            <label className="text-sm font-semibold">
+              Upload scanned copies of Educational Certificates and Transcripts{" "}
+              <span className="text-red-500">*</span>
             </label>
-            <div className="flex  rounded-sm border-[1.9px] border-slate-300">
-              <button type="button" className="px-2 py-1 bg-blue-500 text-white">Browse</button>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300">
+              <button
+                type="button"
+                className="bg-blue-500 px-2 py-1 text-white"
+              >
+                Browse
+              </button>
               <input
                 type="text"
                 className="w-full px-2 text-sm focus:outline-blue-400"
@@ -324,10 +315,131 @@ export default function pages() {
               />
             </div>
           </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+            Upload copy of your academic credential evaluation report{" "}
+              <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300">
+              <button
+                type="button"
+                className="bg-blue-500 px-2 py-1 text-white"
+              >
+                Browse
+              </button>
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder=""
+                disabled
+              />
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+            Upload copy of birth certificate
+              <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300">
+              <button
+                type="button"
+                className="bg-blue-500 px-2 py-1 text-white"
+              >
+                Browse
+              </button>
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder=""
+                disabled
+              />
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+            Upload copy of IELTS/TOEFL
+              <span className="text-red-500">*</span>
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300">
+              <button
+                type="button"
+                className="bg-blue-500 px-2 py-1 text-white"
+              >
+                Browse
+              </button>
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder=""
+                disabled
+              />
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+            Upload official translated copy of your degree certificates and transcripts in English language.
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300">
+              <button
+                type="button"
+                className="bg-blue-500 px-2 py-1 text-white"
+              >
+                Browse
+              </button>
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder=""
+                disabled
+              />
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+            Upload motivational letter/statement of purpose 
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300">
+              <button
+                type="button"
+                className="bg-blue-500 px-2 py-1 text-white"
+              >
+                Browse
+              </button>
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder=""
+                disabled
+              />
+            </div>
+          </div>
+          <div className="my-5">
+            <label className="text-sm font-semibold">
+            Upload copy of recommendation or reference letter (optional)
+            </label>
+            <div className="flex rounded-sm border-[1.9px] border-slate-300">
+              <button
+                type="button"
+                className="bg-blue-500 px-2 py-1 text-white"
+              >
+                Browse
+              </button>
+              <input
+                type="text"
+                className="w-full px-2 text-sm focus:outline-blue-400"
+                placeholder=""
+                disabled
+              />
+            </div>
+          </div>
+
           <p className="text-md my-5">
-          By clicking submit you are agreeing to our terms and conditions and privacy policy
+            By clicking submit you are agreeing to our terms and conditions and
+            privacy policy
           </p>
-          <button className="px-2 py-1 bg-blue-500 text-white rounded-sm">Submit</button>
+          <button className="rounded-sm bg-red-500 px-2 py-1 text-white">
+            Submit
+          </button>
         </form>
       </section>
     </main>
